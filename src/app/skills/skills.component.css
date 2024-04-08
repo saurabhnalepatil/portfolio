@@ -1,0 +1,81 @@
+.skills-section {
+    background: #0d1224;
+    color: #fff;
+}
+
+.pills {
+    background: #1A1443;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+@keyframes slide {
+    from {
+        transform: translate(0);
+    }
+
+    to {
+        transform: translate(-100%);
+    }
+}
+
+.logos {
+    overflow: hidden;
+    padding: 60px 0;
+    background: transparent;
+    white-space: nowrap;
+    position: relative;
+    display: flex;
+}
+
+.logos-slide {
+    display: flex;
+    animation: 40s slide infinite linear;
+}
+
+.logos-slide div {
+    height: 135px;
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #2a2e5a;
+    border-radius: 10px;
+    margin: 0px 10px;
+}
+
+.logos-slide div img {
+    margin: auto;
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #0d1224);
+}
+
+.logos::after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #0d1224);
+}
+
+.logos:before,
+.logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.skill img {
+    height: 60px;
+    width: 60px;
+}
+

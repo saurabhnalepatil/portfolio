@@ -1,0 +1,110 @@
+.background-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: #0d1224;
+    color: #fff;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 80%;
+    height: auto;
+    z-index: 1;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.nav-heading {
+    color: #16f2b3;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.horizontal-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: end;
+}
+
+.horizontal-nav li {
+    float: left;
+}
+
+.horizontal-nav li a {
+    display: block;
+    padding: 0px 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/* Optional: Add hover effect */
+.horizontal-nav li a div:hover {
+    color: #be185d;
+}
+
+.hero-section h1 {
+    font-weight: 800;
+}
+
+.social-icon {
+    color: #ec4899;
+}
+
+.button1 {
+    border: 1px solid linear-gradient(31deg, rgba(236, 72, 153, 1) 0%, rgba(117, 0, 251, 1) 97%);
+    border-radius: 30px;
+    width: 30%;
+}
+
+.button2 {
+    background: linear-gradient(31deg, rgba(236, 72, 153, 1) 0%, rgba(117, 0, 251, 1) 97%);
+    border-radius: 30px;
+    border: none;
+    width: 30%;
+}
+
+
+.hero-card {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    border: 1px solid #1b2c68a0;
+}
+
+.card-content {
+    padding-left: 32px;
+}
+
+.card-content2 {
+    padding-left: 64px;
+}
+
+.card-content3 {
+    padding-left: 96px;
+}
+
+.badge {
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.custom-border {
+    border: 1px solid #312e81;
+    border-radius: 10px;
+    box-shadow: 5px #0d1224;
+    background: linear-gradient(101deg, rgba(13, 18, 36, 1) 45%, rgba(46, 44, 110, 1) 97%);
+}
+
+.circle {
+    padding: 20px 32px;
+}
