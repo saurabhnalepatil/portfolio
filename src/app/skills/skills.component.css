@@ -3,14 +3,7 @@
     color: #fff;
 }
 
-.pills {
-    background: #1A1443;
-    padding: 5px 20px;
-    border-radius: 5px;
-    font-size: 24px;
-}
-
-@keyframes slide {
+/* @keyframes slide {
     from {
         transform: translate(0);
     }
@@ -18,7 +11,7 @@
     to {
         transform: translate(-100%);
     }
-}
+} */
 
 .logos {
     overflow: hidden;
@@ -77,5 +70,21 @@
 .skill img {
     height: 60px;
     width: 60px;
+}
+
+.pills {
+    display: inline-block;
+    background: #1A1443;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-size: 24px;
+    color: white;
+}
+
+.line {
+    background: #1A1443;
+    height: 2px;
+    width: 20%;
+    margin: -25px auto 0;
 }
 

@@ -4,10 +4,19 @@
 }
 
 .pills {
+    display: inline-block;
     background: #1A1443;
     padding: 5px 20px;
     border-radius: 5px;
     font-size: 24px;
+    color: white;
+}
+
+.line {
+    background: #1A1443;
+    height: 2px;
+    width: 25%;
+    margin: -25px auto 0;
 }
 
 .contact-form {
@@ -36,11 +45,11 @@
 
 .button2 {
     background: linear-gradient(31deg, rgba(236, 72, 153, 1) 0%, rgba(117, 0, 251, 1) 97%);
-    border-radius: 30px;
+    border-radius: 35px;
     border: none;
-    width: 50%;
+    width: 40%;
     color: #FFF;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
 }
 
@@ -107,6 +116,11 @@
 
     p {
         margin: 0px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #d3d8e8;
     }
 
     span:hover {
