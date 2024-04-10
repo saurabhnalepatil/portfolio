@@ -35,8 +35,8 @@
 .scroll_card {
     background-color: transparent;
     position: sticky;
-    top: 0;
-    padding-top: calc(var(--index) * var(--card-top-offset));
+    /* top: 0; */
+    /* padding-top: calc(var(--index) * var(--card-top-offset)); */
     list-style-type: none;
     margin: 10px;
 }
@@ -47,42 +47,6 @@
     color: #fff;
     border: 1px solid #1b2c68a0;
     box-shadow: 10px 15px 20px #080c19a0;
-}
-
-@supports (animation-timeline: works) {
-    @scroll-timeline cards-element-scrolls-in-body {
-        source: selector(body);
-        scroll-offsets:
-            selector(#cards) start 1,
-            selector(#cards) start 0;
-        start: selector(#cards) start 1;
-        end: selector(#cards) start 0;
-        time-range: 4s;
-    }
-
-    .scroll_card {
-        --index0: calc(var(--index) - 1);
-        --reverse-index: calc(var(--numcards) - var(--index0));
-        --reverse-index0: calc(var(--reverse-index) - 1);
-    }
-
-    .card__content {
-        transform-origin: 50% 0%;
-        will-change: transform;
-
-        --duration: calc(var(--reverse-index0) * 1s);
-        --delay: calc(var(--index0) * 1s);
-
-        animation: var(--duration) linear scale var(--delay) forwards;
-        animation-timeline: cards-element-scrolls-in-body;
-    }
-
-    @keyframes scale {
-        to {
-            transform:
-                scale(calc(1.1 - calc(0.1 * var(--reverse-index))));
-        }
-    }
 }
 
 .card__content {
@@ -124,24 +88,21 @@
 
     .title {
         margin-left: 150px;
-        font-size:20px;
+        font-size: 20px;
         color: #16f2b3;
     }
 }
 
-
-
-
-.gradient-bar {
+.gradient-bar1 {
+    margin-left: 5px;
     height: 0.5px;
     width: 50%;
-}
-
-.gradient-bar:nth-child(1) {
     background-image: linear-gradient(31deg, rgba(49, 46, 129, 1) 0%, rgba(219, 39, 119, 1) 97%);
 }
 
-.gradient-bar:nth-child(2) {
+.gradient-bar2 {
+    height: 0.5px;
+    width: 50%;
     background-image: linear-gradient(31deg, rgba(219, 39, 119, 1) 0%, rgba(49, 46, 129, 1) 97%);
 }
 
@@ -172,10 +133,10 @@
     font-style: italic;
 }
 
-.description{
+.description {
     color: #22d3EE;
 }
 
-.special-char{
+.special-char {
     color: #9ca3af;
 }
