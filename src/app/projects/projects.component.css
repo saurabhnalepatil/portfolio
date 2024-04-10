@@ -32,12 +32,21 @@
 }
 
 
-.card {
-    
+.scroll_card {
     background-color: transparent;
     position: sticky;
     top: 0;
     padding-top: calc(var(--index) * var(--card-top-offset));
+    list-style-type: none;
+    margin: 10px;
+}
+
+.card {
+    width: 55%;
+    background: linear-gradient(to bottom right, #0d1224, #0a0d37);
+    color: #fff;
+    border: 1px solid #1b2c68a0;
+    box-shadow: 10px 15px 20px #080c19a0;
 }
 
 @supports (animation-timeline: works) {
@@ -51,7 +60,7 @@
         time-range: 4s;
     }
 
-    .card {
+    .scroll_card {
         --index0: calc(var(--index) - 1);
         --reverse-index: calc(var(--numcards) - var(--index0));
         --reverse-index0: calc(var(--reverse-index) - 1);
@@ -76,33 +85,11 @@
     }
 }
 
-
-/* #cards {
-    list-style: none;
-    outline: calc(var(--outline-width) * 10) solid blue;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(var(--numcards), var(--card-height));
-    gap: var(--card-margin);
-} */
-
-/* .card {
-    outline: var(--outline-width) solid hotpink;
-} */
-
 .card__content {
-    box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
-    color: rgb(10, 5, 7);
-    border-radius: 1em;
+    color: #fff;
     overflow: hidden;
-
-    display: grid;
-    grid-template-areas: "text img";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-
-    align-items: stretch;
-    outline: var(--outline-width) solid lime;
+    display: flex;
+    justify-content: center;
 }
 
 .hero-card {
@@ -126,20 +113,69 @@
 .badge1 {
     height: 12px;
     width: 12px;
-    display: inline-block;
     border-radius: 5px;
 }
 
 .circle {
+    display: flex;
+    align-items: center;
     padding: 18px 32px;
     border-bottom: 1px solid #312e81;
+
+    .title {
+        margin-left: 150px;
+        font-size:20px;
+        color: #16f2b3;
+    }
 }
 
-.card1 {
-    background: linear-gradient(to bottom right, #0d1224, #0a0d37);
-    color: #fff;
-    border: 1px solid #1b2c68a0;
-    box-shadow: 10px 15px 20px #080c19a0;
+
+
+
+.gradient-bar {
+    height: 0.5px;
+    width: 50%;
 }
 
+.gradient-bar:nth-child(1) {
+    background-image: linear-gradient(31deg, rgba(49, 46, 129, 1) 0%, rgba(219, 39, 119, 1) 97%);
+}
 
+.gradient-bar:nth-child(2) {
+    background-image: linear-gradient(31deg, rgba(219, 39, 119, 1) 0%, rgba(49, 46, 129, 1) 97%);
+}
+
+.solid-bar {
+    background-color: #312e81;
+    height: 0.5px;
+    width: 50%;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.keyword {
+    color: #ec4899;
+}
+
+.highlight {
+    color: #fcd34d;
+}
+
+.boolean {
+    color: #fb923c;
+}
+
+.function {
+    color: #fb923c;
+    font-style: italic;
+}
+
+.description{
+    color: #22d3EE;
+}
+
+.special-char{
+    color: #9ca3af;
+}
