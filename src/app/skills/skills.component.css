@@ -3,7 +3,7 @@
     color: #fff;
 }
 
-/* @keyframes slide {
+@keyframes slide {
     from {
         transform: translate(0);
     }
@@ -11,7 +11,7 @@
     to {
         transform: translate(-100%);
     }
-} */
+}
 
 .logos {
     overflow: hidden;
@@ -37,6 +37,7 @@
     border: 1px solid #2a2e5a;
     border-radius: 10px;
     margin: 0px 10px;
+    box-shadow: 2px 2px 5px #2e3256;
 }
 
 .logos-slide div img {
@@ -88,3 +89,14 @@
     margin: -25px auto 0;
 }
 
+.blur {
+    width: 6vw;
+    height: 6vw;
+    background-color: #E9D8FD;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(6vw);
+    margin-top: 10px;
+}
