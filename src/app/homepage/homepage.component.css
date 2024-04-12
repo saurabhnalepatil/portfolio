@@ -256,3 +256,17 @@
 .this {
     color: #22d3ee;
 }
+
+
+
+@media (min-width: 320px) and (max-width:767.98px) {
+ 
+}
+
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+}
+
+@media (min-width: 1200px) and (max-width: 1599.98px) {
+   
+}
