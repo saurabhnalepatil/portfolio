@@ -96,17 +96,13 @@
     padding: 10px;
 }
 
-.footer {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 100px;
-}
-
 
 .devloper-details {
     margin: 0;
     font-size: 20px;
     font-weight: 500;
+    display: grid;
+    place-items: center;
 
     a {
         color: #16f2b3;
@@ -115,15 +111,16 @@
 }
 
 .git {
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     img {
         height: 20px;
         width: 20px;
         margin-right: 5px;
     }
 
-    span {
+    div {
         margin-right: 10px;
         display: flex;
         align-items: center;
@@ -145,7 +142,7 @@
 
 
 
-@media (min-width: 320px) and (max-width:767.98px) {
+@media (min-width: 320px) and (max-width:769.98px) {
     .blur {
         width: 60VW;
         filter: blur(20vw);
@@ -171,12 +168,28 @@
     .details img {
         margin: 10px;
     }
-
-    .footer {
-        margin: 20px 15px;
-    }
 }
 
-@media (min-width: 768px) and (max-width: 1199.98px) {}
+@media (min-width: 770px) and (max-width: 1199.98px) {
+    .details {
+        font-size: 18px;
+    }
+
+    .contact-form label {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 14px;
+        width: 60%;
+    }
+
+    .social-icon img {
+        height: 50px;
+        width: 50px;
+        margin: 20px 10px;
+        padding: 10px;
+    }
+}
 
 @media (min-width: 1200px) and (max-width: 1599.98px) {}

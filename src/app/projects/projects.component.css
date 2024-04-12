@@ -92,15 +92,19 @@
     }
 }
 
+.gradient {
+    display: flex;
+}
+
 .gradient-bar1 {
     margin-left: 5px;
-    height: 0.5px;
+    height: 1px;
     width: 50%;
     background-image: linear-gradient(31deg, rgba(49, 46, 129, 1) 0%, rgba(219, 39, 119, 1) 97%);
 }
 
 .gradient-bar2 {
-    height: 0.5px;
+    height: 1px;
     width: 50%;
     background-image: linear-gradient(31deg, rgba(219, 39, 119, 1) 0%, rgba(49, 46, 129, 1) 97%);
 }
@@ -165,12 +169,24 @@
         }
     }
 
-    .gradient-bar1,
-    .gradient-bar2 {
-        height: .5px;
-    }
 }
 
-@media (min-width: 768px) and (max-width: 1199.98px) {}
 
-@media (min-width: 1200px) and (max-width: 1599.98px) {}
+@media (min-width:768px) and (max-width: 1199.98px) {
+    .blur {
+        left: 10vw;
+        width: 35VW;
+        filter: blur(10vw);
+    }
+
+    .card {
+        width: 65%;
+        font-size: 14px;
+    }
+
+   
+}
+
+@media (min-width: 1200px) and (max-width: 1599.98px) {
+
+}

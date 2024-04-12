@@ -29,6 +29,8 @@
 }
 
 .horizontal-nav {
+    display: flex;
+    place-items: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -257,7 +259,7 @@
 
 
 
-@media (min-width: 320px) and (max-width:767.98px) {
+@media (min-width: 320px) and (max-width:770.98px) {
     .background-image {
         top: 4%;
         width: 100%;
@@ -285,18 +287,65 @@
         height: 55px;
         width: 180px;
     }
-    .hero-button{
+
+    .hero-button {
         display: flex;
         justify-content: center;
     }
-    .blur{
+
+    .blur {
         width: 80vw;
         filter: blur(20vw);
     }
-        .about p{ font-size: 14px;}
+
+    .about p {
+        font-size: 14px;
+    }
 }
 
 
-@media (min-width: 768px) and (max-width: 1199.98px) {}
+@media (min-width: 771px) and (max-width: 1199.98px) {
+    .background-image {
+        top: 25%;
+        width: 100%;
+    }
+
+    .horizontal-nav {
+        font-size: 15px;
+    }
+
+    .card-body {
+        padding: 14px;
+    }
+
+    .hero-card {
+        font-size: 14px;
+    }
+
+    .hero-section {
+        padding: 10px;
+    }
+
+    .btn,
+    .btn2 {
+        font-size: 14px;
+        height: 55px;
+        width: 180px;
+    }
+
+    .hero-button {
+        display: flex;
+        justify-content: center;
+    }
+
+    .blur {
+        width: 80vw;
+        filter: blur(20vw);
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+}
 
 @media (min-width: 1200px) and (max-width: 1599.98px) {}

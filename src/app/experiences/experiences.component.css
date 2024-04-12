@@ -32,8 +32,9 @@
 }
 
 .experince-img {
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
@@ -145,12 +146,29 @@
     .card {
         font-size: 14px;
     }
+
     .card-bg-img {
         top: -10%;
     }
 
 }
 
-@media (min-width: 768px) and (max-width: 1199.98px) {}
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .card {
+        font-size: 14px;
+    }
 
-@media (min-width: 1200px) and (max-width: 1599.98px) {}
+    .card-bg-img {
+        top: -38%;
+    }
+
+    .experince-img {
+        margin: 50px 10px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1599.98px) {
+    .card-bg-img {
+        top: -98px;
+    }
+}

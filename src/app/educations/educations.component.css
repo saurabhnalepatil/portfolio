@@ -8,7 +8,7 @@
 
 .background-image {
     position: absolute;
-    top: 0;
+    top: -98;
     left: 10%;
     width: 80%;
     height: auto;
@@ -143,7 +143,8 @@
     }
 
     .card {
-        font-size: 14px;
+        font-size: clamp(14px, 4vw, 18px);
+        /* font-size: 14px; */
     }
 
     .card-bg-img {
@@ -152,6 +153,24 @@
 
 }
 
-@media (min-width: 768px) and (max-width: 1199.98px) {}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .card-bg-img {
+        top: -21%;
+    }
+}
 
-@media (min-width: 1200px) and (max-width: 1599.98px) {}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .card-bg-img {
+        top: -21%;
+    }
+
+    .experince-img {
+        margin: 50px 10px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1599.98px) {
+    .card-bg-img {
+        top: -98px;
+    }
+}
