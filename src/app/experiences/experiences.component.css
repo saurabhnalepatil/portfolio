@@ -34,15 +34,42 @@
 .card {
     background: #0d1224;
     color: #fff;
-    border: 1px solid #312e81;
+    border: 1px solid #2a2e5a;
     border-radius: 10px;
     position: relative;
     z-index: 1;
+    margin: 15px 10px;
+}
+
+.card_heading {
+    display: grid;
+    place-items: center;
+    color: #16f2b3;
+    padding: 16px;
+}
+
+.card_content {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    padding: 5px;
+}
+
+.content {
+    margin-left: 30px;
+
+    p {
+        margin: 5px;
+    }
 }
 
 .card-bg-img {
     position: absolute;
-    top: -59%;
+    top: -62%;
     left: 0;
     width: 100%;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5);
 }

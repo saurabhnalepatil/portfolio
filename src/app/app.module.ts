@@ -9,6 +9,8 @@ import { SkillsComponent } from './skills/skills.component';
 import { EducationsComponent } from './educations/educations.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { PracticeComponent } from './practice/practice.component';
+
 
 @NgModule({
   declarations: [
@@ -18,11 +20,12 @@ import { ProjectsComponent } from './projects/projects.component';
     SkillsComponent,
     EducationsComponent,
     ContactusComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    PracticeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
