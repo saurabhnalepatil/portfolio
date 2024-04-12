@@ -87,7 +87,6 @@
     border-bottom: 1px solid #312e81;
 
     .title {
-        margin-left: 150px;
         font-size: 20px;
         color: #16f2b3;
     }
@@ -142,3 +141,36 @@
 }
 
 
+@media (min-width: 320px) and (max-width:767.98px) {
+    .blur {
+        width: 60VW;
+        filter: blur(20vw);
+    }
+
+    .cards {
+        padding: 0;
+        margin: 0;
+    }
+
+    .card {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .circle {
+        padding: 22px 16px;
+
+        .title {
+            font-size: 16px;
+        }
+    }
+
+    .gradient-bar1,
+    .gradient-bar2 {
+        height: .5px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {}
+
+@media (min-width: 1200px) and (max-width: 1599.98px) {}

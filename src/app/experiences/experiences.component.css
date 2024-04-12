@@ -31,6 +31,11 @@
     margin: -25px auto 0;
 }
 
+.experince-img {
+    display: grid;
+    place-items: center;
+}
+
 .card {
     background: #0d1224;
     color: #fff;
@@ -126,3 +131,26 @@
     left: 0;
     width: 100%;
 }
+
+
+@media (min-width: 320px) and (max-width:767.98px) {
+    .background-image {
+        width: 100%;
+    }
+
+    .line {
+        width: 100%;
+    }
+
+    .card {
+        font-size: 14px;
+    }
+    .card-bg-img {
+        top: -10%;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {}
+
+@media (min-width: 1200px) and (max-width: 1599.98px) {}

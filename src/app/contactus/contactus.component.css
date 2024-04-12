@@ -28,7 +28,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     filter: blur(6vw);
-        margin-top: 10px;
+    margin-top: 10px;
 }
 
 .contact-form {
@@ -55,7 +55,7 @@
     color: #d3d8e8;
 }
 
-.button2 {
+.btn {
     background: linear-gradient(31deg, rgba(236, 72, 153, 1) 0%, rgba(117, 0, 251, 1) 97%);
     border-radius: 35px;
     border: none;
@@ -85,6 +85,10 @@
     padding: 8px;
 }
 
+.social-icon {
+    padding: 10px 0px;
+}
+
 .social-icon img {
     height: 50px;
     width: 50px;
@@ -111,9 +115,8 @@
 }
 
 .git {
-    display: flex;
-    align-items: center;
-
+    display: grid;
+    place-items: center;
     img {
         height: 20px;
         width: 20px;
@@ -139,3 +142,41 @@
         color: #16f2b3 !important;
     }
 }
+
+
+
+@media (min-width: 320px) and (max-width:767.98px) {
+    .blur {
+        width: 60VW;
+        filter: blur(20vw);
+    }
+
+    .line {
+        width: 80%;
+    }
+
+    .contact-form label {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 14px;
+        width: 60%;
+    }
+
+    .details {
+        font-size: 14px;
+    }
+
+    .details img {
+        margin: 10px;
+    }
+
+    .footer {
+        margin: 20px 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {}
+
+@media (min-width: 1200px) and (max-width: 1599.98px) {}

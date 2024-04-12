@@ -79,20 +79,18 @@
     background: linear-gradient(31deg, rgba(236, 72, 153, 1) 0%, rgba(117, 0, 251, 1) 97%);
     border-radius: 30px;
     border: none;
-    width: 30%;
+    height: 55px;
+    width: 180px;
+    padding: 20px 20px;
     color: #fff;
     font-weight: 500;
     transition: width 0.3s;
 }
 
-.btn2:hover {
-    width: 40px;
-}
-
-
-
 .btn {
-    padding: 20px 50px;
+    height: 55px;
+    width: 180px;
+    padding: 20px 20px;
     border: none;
     outline: none;
     position: relative;
@@ -118,7 +116,8 @@
 }
 
 .btn:hover {
-    padding: 25px 55px;
+    height: 60px;
+    width: 185px;
     background: linear-gradient(17deg, rgba(220, 31, 255, 1) 7%, rgba(0, 255, 163, 1) 100%);
 }
 
@@ -160,7 +159,6 @@
     background: linear-gradient(to bottom right, #0d1224, #0a0d37);
     color: #fff;
     border: 1px solid #1b2c68a0;
-
     box-shadow: 10px 15px 20px #080c19a0;
 }
 
@@ -260,13 +258,45 @@
 
 
 @media (min-width: 320px) and (max-width:767.98px) {
- 
+    .background-image {
+        top: 4%;
+        width: 100%;
+    }
+
+    .horizontal-nav {
+        display: none;
+    }
+
+    .card-body {
+        padding: 12px;
+    }
+
+    .hero-card {
+        font-size: 12px;
+    }
+
+    .hero-section {
+        padding: 10px;
+    }
+
+    .btn,
+    .btn2 {
+        font-size: 12px;
+        height: 55px;
+        width: 180px;
+    }
+    .hero-button{
+        display: flex;
+        justify-content: center;
+    }
+    .blur{
+        width: 80vw;
+        filter: blur(20vw);
+    }
+        .about p{ font-size: 14px;}
 }
 
 
-@media (min-width: 768px) and (max-width: 1199.98px) {
-}
+@media (min-width: 768px) and (max-width: 1199.98px) {}
 
-@media (min-width: 1200px) and (max-width: 1599.98px) {
-   
-}
+@media (min-width: 1200px) and (max-width: 1599.98px) {}
