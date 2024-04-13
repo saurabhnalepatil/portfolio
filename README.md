@@ -85,11 +85,10 @@ Here is a list of packages used in this project:
 
 | Package             | Description             |
 |---------------------|-------------------------|
-| next                | Next.js framework       |
+| Angular             | Angular framework       |
 | @emailjs/browser    | Email sending library   |
-| lottie-react        | Lottie animation library|
-| react-fast-marquee | Fast marquee component  |
-| react-icons         | Icon library for React  |
-| react-toastify      | Notification library    |
-| sass                | CSS preprocessor        |
-| tailwindcss         | CSS framework           |
+| react-fast-marquee  | Fast marquee component  |
+| font Awesome-icons         | Icon library     |
+| toaster     | Notification library    |
+| css                | CSS preprocessor        |
+| bootstrap         | CSS framework           |
