@@ -20,15 +20,15 @@
 }
 
 .blur {
-    width: 6vw;
-    height: 6vw;
+    width: 3vw;
+    height: 3vw;
     background-color: #E9D8FD;
     border-radius: 50%;
     position: absolute;
     left: 20%;
     transform: translate(-50%, -50%);
-    filter: blur(6vw);
-    margin-top: 10px;
+    filter: blur(3vw);
+    margin-top: 20px;
 }
 
 
