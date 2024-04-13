@@ -264,7 +264,7 @@
 
 
 @media (min-width: 320px) and (max-width:770.98px) {
-    .background-container{
+    .background-container {
         background-image: none;
     }
 
@@ -278,6 +278,10 @@
 
     .hero-card {
         font-size: 12px;
+    }
+
+    .line {
+        width: 80%;
     }
 
     .hero-section {

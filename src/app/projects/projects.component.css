@@ -184,9 +184,12 @@
         font-size: 14px;
     }
 
-   
+
 }
 
 @media (min-width: 1200px) and (max-width: 1599.98px) {
+    .blur {
+        left: 10%;
+    }
 
 }
