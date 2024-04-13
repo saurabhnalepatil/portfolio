@@ -63,11 +63,23 @@ NEXT_PUBLIC_EMAILJS_PUBLIC_KEY =
 ```
 ## Then, Customize data in the utils/data folder.
 Eg:
-
+```bash
+export const personalData = {
+  name: "Saurabh Nale",
+  profile: "/profile.png",
+  designation: "Full-Stack Software Developer",
+  description: "My name is SAURABH NALE....",
+  email: "saurabhnalepatil.com",
+  phone: "+91 9511748787",
+  address: "A1 Tower, Pyramid County, Pansare colony, Bhukum, Mulshi 441521",
+  gitHub: "[https://github.com/saurabhnalepatil/](https://github.com/saurabhnalepatil/)",
+  linkedIn: "[https://www.linkedin.com/in/abu-said-bd/](https://www.linkedin.com/in/saurabh-nale-967472216/)",
+  resume: "...",
+};
+```
 devUsername Used for fetching blog from dev.to.
 
 # **Packages Used 📦**
-# Used Package List
 
 Here is a list of packages used in this project:
 
