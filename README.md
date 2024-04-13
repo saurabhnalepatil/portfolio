@@ -12,14 +12,14 @@
 - [Usage](#usage)
 - [Packages Used](#packages-used)
 # Sections 🔖
-- [<span style="font-size: larger; font-weight: bold;">HERO SECTION</span>](#hero-section)
-- [<span style="font-size: larger; font-weight: bold;">ABOUT ME</span>](#about-me)
-- [<span style="font-size: larger; font-weight: bold;">EXPERIENCE</span>](#experience)
-- [<span style="font-size: larger; font-weight: bold;">SKILLS</span>](#skills)
-- [<span style="font-size: larger; font-weight: bold;">PROJECTS</span>](#projects)
-- [<span style="font-size: larger; font-weight: bold;">EDUCATION</span>](#education)
-- [<span style="font-size: larger; font-weight: bold;">BLOG</span>](#blog)
-- [<span style="font-size: larger; font-weight: bold;">CONTACTS</span>](#contacts)
+- **[HERO SECTION](#hero-section)**
+- **[ABOUT ME](#about-me)**
+- **[EXPERIENCE](#experience)**
+- **[SKILLS](#skills)**
+- **[PROJECTS](#projects)**
+- **[EDUCATION](#education)**
+- **[BLOG](#blog)**
+- **[CONTACTS](#contacts)**
 
 
 
