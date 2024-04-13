@@ -87,7 +87,6 @@ Here is a list of packages used in this project:
 |---------------------|-------------------------|
 | Angular             | Angular framework       |
 | @emailjs/browser    | Email sending library   |
-| react-fast-marquee  | Fast marquee component  |
 | font Awesome-icons         | Icon library     |
 | toaster     | Notification library    |
 | css                | CSS preprocessor        |
