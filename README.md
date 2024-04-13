@@ -5,21 +5,22 @@
 
 # View live preview [here](https://portfolio-tan-beta-56.vercel.app/).
 # Table of Contents 📜
-- [Sections](#section)
-- [Demo](#demo)
-- [Installation](#installation)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Packages Used](#packages-used)
+- **[Sections](#section)**
+- **[Demo](#demo)**
+- **[Installation](#installation)**
+- **[Getting Started](#getting-started)**
+- **[Usage](#usage)**
+- **[Packages Used](#packages-used)**
 # Sections 🔖
-- **[HERO SECTION](#hero-section)**
-- **[ABOUT ME](#about-me)**
-- **[EXPERIENCE](#experience)**
-- **[SKILLS](#skills)**
-- **[PROJECTS](#projects)**
-- **[EDUCATION](#education)**
-- **[BLOG](#blog)**
-- **[CONTACTS](#contacts)**
+- **HERO SECTION**
+- **ABOUT ME**
+- **EXPERIENCE**
+- **SKILLS**
+- **PROJECTS**
+- **EDUCATION**
+- **BLOG**
+- **CONTACTS**
+
 
 
 
