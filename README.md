@@ -12,14 +12,15 @@
 - [Usage](#usage)
 - [Packages Used](#packages-used)
 # Sections 🔖
-- [<span style="font-size: larger;">HERO SECTION</span>](#hero-section)
-- [<span style="font-size: larger;">ABOUT ME</span>](#about-me)
-- [<span style="font-size: larger;">EXPERIENCE</span>](#experience)
-- [<span style="font-size: larger;">SKILLS</span>](#skills)
-- [<span style="font-size: larger;">PROJECTS</span>](#projects)
-- [<span style="font-size: larger;">EDUCATION</span>](#education)
-- [<span style="font-size: larger;">BLOG</span>](#blog)
-- [<span style="font-size: larger;">CONTACTS</span>](#contacts)
+- [<span style="font-size: larger; font-weight: bold;">HERO SECTION</span>](#hero-section)
+- [<span style="font-size: larger; font-weight: bold;">ABOUT ME</span>](#about-me)
+- [<span style="font-size: larger; font-weight: bold;">EXPERIENCE</span>](#experience)
+- [<span style="font-size: larger; font-weight: bold;">SKILLS</span>](#skills)
+- [<span style="font-size: larger; font-weight: bold;">PROJECTS</span>](#projects)
+- [<span style="font-size: larger; font-weight: bold;">EDUCATION</span>](#education)
+- [<span style="font-size: larger; font-weight: bold;">BLOG</span>](#blog)
+- [<span style="font-size: larger; font-weight: bold;">CONTACTS</span>](#contacts)
+
 
 
 ## Code scaffolding
