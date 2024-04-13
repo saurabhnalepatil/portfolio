@@ -22,7 +22,7 @@
 - **CONTACTS**
 
 # **Installation ⬇️**
-##You will need to download Git and Node to run this project
+## You will need to download Git and Node to run this project
 - **[Git](https://git-scm.com/downloads)**
 - **[Node](https://nodejs.org/en/download/)**
 ## Make sure you have the latest version of both Git and Node on your computer.
