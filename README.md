@@ -31,9 +31,38 @@
 node --version
 git --version
 ```
-
-
+# **Getting Started 🎯**
+## Fork and Clone the repo
+To Fork the repo click on the fork button at the top right of the page. Once the repo is forked open your terminal and perform the following commands
 ```bash
 git clone https://github.com/<YOUR GITHUB USERNAME>/portfolio.git
 cd portfolio
+```
+## Install packages from the root directory
+```bash
+npm install
+# or
+yarn install
+```
+Then, run the development server:
+```bash
+npm run dev
+# or
+yarn dev
+```
+Open http://localhost:4200 with your browser to see the result.
 
+# **Usage 🕹️**
+Goto emailjs.com and create a new account for the mail sending. In free trial you will get 200 mail per month. After setup emailjs account, Please create a new .env file from .env.example file.
+
+Eg:
+```bash
+NEXT_PUBLIC_EMAILJS_SERVICE_ID =
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID =
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY =
+```
+## Then, Customize data in the utils/data folder.
+Eg:
+devUsername Used for fetching blog from dev.to.
+
+# **Packages Used 📦**
