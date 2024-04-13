@@ -1,10 +1,27 @@
-# Developer Portfolio
-Are you struggling to create a professional portfolio website? Look no further! You can use the Developer Portfolio template and create your very own personalized portfolio today! My website is designed to be user-friendly and easily customizable, making it perfect for both developers and freelancers.
-# Demo 🎥
+## Developer Portfolio
+# Are you struggling to create a professional portfolio website? Look no further! You can use the Developer Portfolio template and create your very own personalized portfolio today! My website is designed to be user-friendly and easily customizable, making it perfect for both developers and freelancers.
+## Demo 🎥
   ![image](https://github.com/saurabhnalepatil/portfolio/assets/95145125/bfb5992d-65af-49f6-92ae-cb6cd9a8f7dc)
 
 ## View live preview [here](https://portfolio-tan-beta-56.vercel.app/).
-
+## Table of Contents 📜
+- [Hero Section](#hero-section)
+- [About Me](#about-me)
+- [Experience](#experience)
+- [Skills](#skills)
+- [Projects](#projects)
+- [Education](#education)
+- [Blog](#blog)
+- [Contacts](#contacts)
+## Sections 🔖
+HERO SECTION
+ABOUT ME
+EXPERIENCE
+SKILLS
+PROJECTS
+EDUCATION
+BLOG
+CONTACTS
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
