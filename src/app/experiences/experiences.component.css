@@ -95,6 +95,10 @@
     background-position: bottom;
 }
 
+.company-name {
+    font-size: 14px;
+}
+
 @keyframes glowing {
     0% {
         background-position: 0 0;
@@ -157,6 +161,4 @@
     }
 }
 
-@media (min-width: 1200px) and (max-width: 1599.98px) {
-  
-}
+@media (min-width: 1200px) and (max-width: 1599.98px) {}
