@@ -1,30 +1,27 @@
 <div class="background-container">
-    <img src="assets/images/hero.svg" alt="" class="background-image">
     <div class="nav">
-        <div class="container">
-            <div class="flex justify-between">
-                <a class="nav-heading">SAURABH NALE</a>
-                <ul class="horizontal-nav">
-                    <li class="">
-                        <a href="#home" class="">ABOUT</a>
-                    </li>
-                    <li class="">
-                        <a href="#experience" class="">EXPERIENCE</a>
-                    </li>
-                    <li class="">
-                        <a href="#skills" class="">SKILLS</a>
-                    </li>
-                    <li class="">
-                        <a href="#education" class="">EDUCATION</a>
-                    </li>
-                    <li class="">
-                        <a href="#project" class="">PROJECTS</a>
-                    </li>
-                    <li class="">
-                        <a href="#contact" class="">CONTACT US</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="container navbar">
+            <a class="nav-heading">SAURABH NALE</a>
+            <ul class="horizontal-nav">
+                <li class="">
+                    <a href="#home" class="">ABOUT</a>
+                </li>
+                <li class="">
+                    <a href="#experience" class="">EXPERIENCE</a>
+                </li>
+                <li class="">
+                    <a href="#skills" class="">SKILLS</a>
+                </li>
+                <li class="">
+                    <a href="#education" class="">EDUCATION</a>
+                </li>
+                <li class="">
+                    <a href="#project" class="">PROJECTS</a>
+                </li>
+                <li class="">
+                    <a href="#contact" class="">CONTACT US</a>
+                </li>
+            </ul>
         </div>
     </div>
 
@@ -40,10 +37,10 @@
                             Professional <span style="color: #16f2b3;">Software Developer</span>.
                         </h1>
                         <div class="social-icon py-5">
-                            <a href="" class="mx-2">
-                               <img src="assets/images/icon/pink-git.svg" alt="">
+                            <a href="https://github.com/saurabhnalepatil" class="mx-2">
+                                <img src="assets/images/icon/pink-git.svg" alt="">
                             </a>
-                            <a href="" class="mx-2">
+                            <a href="https://www.linkedin.com/in/saurabh-nale-967472216/" class="mx-2">
                                 <img src="assets/images/icon/pink-linkdin.svg" alt="">
                             </a>
                             <a href="" class="mx-2">
@@ -57,17 +54,17 @@
                             </a>
                         </div>
                         <div class="hero-button py-3">
-                            <a href="" class="mx-2">
+                            <a href="#contact" class="mx-2">
                                 <button class="btn py-3"> CONTACT US
                                     <img src="assets/images/icon/user.svg" alt="" class="mb-1">
                                 </button>
                             </a>
                             <a href="" class="mx-2">
-                                <button class="btn2 py-3">GET RESUME
+                                <button class="btn2 py-3" (click)="downloadResume()">GET RESUME
                                     <img src="assets/images/icon/download.svg" alt="">
                                 </button>
                             </a>
-                            
+
 
                         </div>
                     </div>
@@ -85,24 +82,25 @@
                                 <span class="badge1 mx-1" style="background: #fb923c;"></span>
                                 <span class="badge1 mx-1" style="background: #bbf7d0;"></span>
                             </div>
-                    
+
                             <div class="hero-card">
                                 <div class="card-body">
                                     <div><span class="keyword">const</span> coder<span class="keyword"> = </span> <span
                                             class="special-char">{{ '{'}}</span> </div>
-                                    <div class="card-content">name: <span class="special-char">'</span><span class="highlight">Saurabh
+                                    <div class="card-content">name: <span class="special-char">'</span><span
+                                            class="highlight">Saurabh
                                             Nale</span><span class="special-char">',</span></div>
                                     <div class="card-content">skills:
-                                        <span class="special-char">['</span><span class="highlight">React</span>
-                                        <span class="special-char">', '</span><span class="highlight">NextJS</span>
-                                        <span class="special-char">', '</span><span class="highlight">Redux</span>
-                                        <span class="special-char">', '</span><span class="highlight">Express</span>
+                                        <span class="special-char">['</span><span class="highlight">Angular</span>
+                                        <span class="special-char">', '</span><span class="highlight">Flask</span>
+                                        <span class="special-char">', '</span><span class="highlight">Bootstrap</span>
+                                        <span class="special-char">', '</span><span class="highlight">Git/Github</span>
                                         <span class="special-char">', '</span><span class="highlight">NestJS</span>
                                         <span class="special-char">', '</span><span class="highlight">MySql</span>
                                         <span class="special-char">', '</span><span class="highlight">MongoDB</span>
-                                        <span class="special-char">', '</span><span class="highlight">Docker</span><span
+                                        <span class="special-char">', '</span><span class="highlight">Azure Function</span><span
                                             class="special-char">', '</span>
-                                        <span class="highlight">AWS</span><span class="special-char">'],</span>
+                                        <span class="highlight">Azure</span><span class="special-char">'],</span>
                                     </div>
                                     <div class="card-content">hardWorker: <span class="boolean">true</span><span
                                             class="special-char">,</span></div>
@@ -111,11 +109,13 @@
                                     <div class="card-content">problemSolver: <span class="boolean">true</span><span
                                             class="special-char">,</span></div>
                                     <div class="card-content"><span style="color: #4ade80;">hireable: </span>
-                                        <span class="function">function<span class="special-char">{{'() {'}}</span> </span>
+                                        <span class="function">function<span class="special-char">{{'() {'}}</span>
+                                        </span>
                                     </div>
                                     <div class="card-content2"><span class="function">return </span><span
                                             class="special-char">{{'('}}</span></div>
-                                    <div class="card-content3"><span class="this">this.</span>hardWorker <span class="highlight"> &&</span>
+                                    <div class="card-content3"><span class="this">this.</span>hardWorker <span
+                                            class="highlight"> &&</span>
                                     </div>
                                     <div class="card-content3"><span class="this">this.</span>problemSolver <span
                                             class="highlight">&&</span></div>
@@ -141,13 +141,16 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-6 fs-5 order-2 order-md-1">
                         <h3 class="py-3 m-0" style="color: #16f2b3;">WHO I AM?</h3>
-                        <p> My name is Saurabh Nale. I am a professional and enthusiastic programmer in my daily life. I am a
+                        <p> My name is Saurabh Nale. I am a professional and enthusiastic programmer in my daily life. I
+                            am a
                             quick learner with a
                             self-learning attitude. I love to learn and explore new technologies and am passionate about
                             problem-solving. I love
-                            almost all the stacks of web application development and love to make the web more open to the
+                            almost all the stacks of web application development and love to make the web more open to
+                            the
                             world. My core skill is
-                            based on JavaScript and I love to do most of the things using JavaScript. I am available for any
+                            based on JavaScript and I love to do most of the things using JavaScript. I am available for
+                            any
                             kind of job opportunity
                             that suits my skills and interests.</p>
                     </div>

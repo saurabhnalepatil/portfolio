@@ -8,7 +8,7 @@
 
 .background-image {
     position: absolute;
-    top: -98;
+    top: 0;
     left: 10%;
     width: 80%;
     height: auto;
@@ -32,8 +32,9 @@
 }
 
 .experince-img {
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
@@ -45,6 +46,9 @@
     z-index: 1;
     margin: 15px 10px;
     cursor: pointer;
+    background-image: url('../../assets/images/blur-23.svg');
+    background-size: cover;
+    background-position: bottom;
 }
 
 .card:before {
@@ -87,6 +91,9 @@
     left: 0;
     top: 0;
     border-radius: 10px;
+    background-image: url('../../assets/images/blur-23.svg');
+    background-size: cover;
+    background-position: bottom;
 }
 
 @keyframes glowing {
@@ -125,43 +132,23 @@
     }
 }
 
-.card-bg-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-
-
 @media (min-width: 320px) and (max-width:767.98px) {
     .background-image {
         width: 100%;
     }
 
     .line {
-        width: 80%;
+        width: 100%;
     }
 
     .card {
-        font-size: clamp(14px, 4vw, 18px);
-        /* font-size: 14px; */
-    }
-
-    .card-bg-img {
-        top: -10%;
-    }
-
-}
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-    .card-bg-img {
-        top: -21%;
+        font-size: 14px;
     }
 }
 
-@media (min-width: 992px) and (max-width: 1199.98px) {
-    .card-bg-img {
-        top: -21%;
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .card {
+        font-size: 14px;
     }
 
     .experince-img {
@@ -170,7 +157,5 @@
 }
 
 @media (min-width: 1200px) and (max-width: 1599.98px) {
-    .card-bg-img {
-        top: -98px;
-    }
+    
 }

@@ -60,6 +60,16 @@
     z-index: 2;
 }
 
+.logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #0d1224);
+}
+
+.logos::after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #0d1224);
+}
+
 .skill img {
     height: 60px;
     width: 60px;
@@ -116,28 +126,9 @@
         margin: 0px 10px;
         box-shadow: 2px 2px 5px #2e3256;
     }
+    .logos:before, .logos::after{background: none;}
 }
 
-@media (min-width: 768px) and (max-width: 1199.98px) {
-    .logos:before {
-        left: 0;
-        background: linear-gradient(to left, rgba(255, 255, 255, 0), #0d1224);
-    }
+@media (min-width: 768px) and (max-width: 1199.98px) {}
 
-    .logos::after {
-        right: 0;
-        background: linear-gradient(to right, rgba(255, 255, 255, 0), #0d1224);
-    }
-}
-
-@media (min-width: 1200px) and (max-width: 1599.98px) {
-    .logos:before {
-        left: 0;
-        background: linear-gradient(to left, rgba(255, 255, 255, 0), #0d1224);
-    }
-
-    .logos::after {
-        right: 0;
-        background: linear-gradient(to right, rgba(255, 255, 255, 0), #0d1224);
-    }
-}
+@media (min-width: 1200px) and (max-width: 1599.98px) {}
