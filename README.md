@@ -26,10 +26,10 @@
 - **[Git](https://git-scm.com/downloads)**
 - **[Node](https://nodejs.org/en/download/)**
 ## Make sure you have the latest version of both Git and Node on your computer.
+
 ```bash
 node --version
-git --version```
-
+git --version
 
 # **Getting Started 🎯**
 ## Fork and Clone the repo
