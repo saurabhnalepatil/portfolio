@@ -63,6 +63,21 @@ NEXT_PUBLIC_EMAILJS_PUBLIC_KEY =
 ```
 ## Then, Customize data in the utils/data folder.
 Eg:
+
 devUsername Used for fetching blog from dev.to.
 
 # **Packages Used 📦**
+# Used Package List
+
+Here is a list of packages used in this project:
+
+| Package             | Description             |
+|---------------------|-------------------------|
+| next                | Next.js framework       |
+| @emailjs/browser    | Email sending library   |
+| lottie-react        | Lottie animation library|
+| react-fast-marquee | Fast marquee component  |
+| react-icons         | Icon library for React  |
+| react-toastify      | Notification library    |
+| sass                | CSS preprocessor        |
+| tailwindcss         | CSS framework           |
