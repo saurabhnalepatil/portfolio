@@ -27,7 +27,8 @@
     animation: 40s slide infinite linear;
 }
 
-.logos-slide div {
+.skill,
+.logos-slide .skill {
     height: 135px;
     width: 160px;
     display: flex;
@@ -37,7 +38,33 @@
     border: 1px solid #2a2e5a;
     border-radius: 10px;
     margin: 0px 10px;
+    position: relative;
     box-shadow: 2px 2px 5px #2e3256;
+    transition: height 0.3s, width 0.3s;
+}
+
+.skill:hover,
+.logos-slide .skill:hover {
+    height: 145px;
+    width: 165px;
+    border: 1px solid #8b5cf6;
+    transform: scaleY(1.05);
+    transform-origin: bottom;
+
+    .gradient {
+        display: none;
+    }
+}
+
+
+.gradient {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 1px;
+    width: 80%;
+    background-image: radial-gradient(circle, rgba(139, 92, 246, 1) 0%, rgba(42, 46, 90, 1) 100%);
 }
 
 .logos-slide div img {
@@ -47,8 +74,6 @@
 .logos:hover .logos-slide {
     animation-play-state: paused;
 }
-
-
 
 .logos:before,
 .logos:after {
@@ -126,7 +151,11 @@
         margin: 0px 10px;
         box-shadow: 2px 2px 5px #2e3256;
     }
-    .logos:before, .logos::after{background: none;}
+
+    .logos:before,
+    .logos:after {
+        background: none;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1199.98px) {}
