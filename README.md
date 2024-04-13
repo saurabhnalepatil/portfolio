@@ -5,21 +5,21 @@
 
 ## View live preview [here](https://portfolio-tan-beta-56.vercel.app/).
 ## Table of Contents 📜
-- [Hero Section](#hero-section)
-- [About Me](#about-me)
-- [Experience](#experience)
-- [Skills](#skills)
-- [Projects](#projects)
-- [Education](#education)
-- [Blog](#blog)
-- [Contacts](#contacts)
+# Sections
+- [Demo](#demo)
+- [Installation](#installation)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Packages Used](#packages-used)
 ## Sections 🔖
- Demo
-- Installation
-- Getting Started
-- Usage
-- Packages Used
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- HERO SECTION
+- ABOUT ME
+- EXPERIENCE
+- SKILLS
+- PROJECTS
+- EDUCATION
+- BLOG
+- CONTACTS
 
 ## Code scaffolding
 
