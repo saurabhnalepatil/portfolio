@@ -72,8 +72,8 @@ export const personalData = {
   email: "saurabhnalepatil.com",
   phone: "+91 9511748787",
   address: "A1 Tower, Pyramid County, Pansare colony, Bhukum, Mulshi 441521",
-  gitHub: "[https://github.com/saurabhnalepatil/](https://github.com/saurabhnalepatil/)",
-  linkedIn: "[https://www.linkedin.com/in/abu-said-bd/](https://www.linkedin.com/in/saurabh-nale-967472216/)",
+  gitHub: "https://github.com/saurabhnalepatil/",
+  linkedIn: "https://www.linkedin.com/in/saurabh-nale-967472216/",
   resume: "...",
 };
 ```
