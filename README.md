@@ -31,6 +31,8 @@
 node --version
 git --version
 
+---
+
 # **Getting Started 🎯**
 ## Fork and Clone the repo
 
