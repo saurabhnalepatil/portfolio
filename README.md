@@ -1,8 +1,9 @@
-# Portfolio
+# Developer Portfolio
+Are you struggling to create a professional portfolio website? Look no further! You can use the Developer Portfolio template and create your very own personalized portfolio today! My website is designed to be user-friendly and easily customizable, making it perfect for both developers and freelancers.
+# Demo 🎥
+  ![image](https://github.com/saurabhnalepatil/portfolio/assets/95145125/bfb5992d-65af-49f6-92ae-cb6cd9a8f7dc)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
-
-## Development server
+## View live preview [here](https://portfolio-tan-beta-56.vercel.app/).
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
