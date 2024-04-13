@@ -27,8 +27,7 @@
     animation: 40s slide infinite linear;
 }
 
-.skill,
-.logos-slide .skill {
+.skill {
     height: 135px;
     width: 160px;
     display: flex;
@@ -43,8 +42,7 @@
     transition: height 0.3s, width 0.3s;
 }
 
-.skill:hover,
-.logos-slide .skill:hover {
+.skill:hover {
     height: 145px;
     width: 165px;
     border: 1px solid #8b5cf6;
@@ -139,18 +137,14 @@
         width: 80%;
     }
 
-    .logos-slide div {
-        height: 115px;
-        width: 140px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        border: 1px solid #2a2e5a;
-        border-radius: 10px;
-        margin: 0px 10px;
-        box-shadow: 2px 2px 5px #2e3256;
-    }
+   .skill {
+       height: 115px;
+       width: 140px;
+
+       img{
+        padding: 5px;
+       }
+   }
 
     .logos:before,
     .logos:after {
