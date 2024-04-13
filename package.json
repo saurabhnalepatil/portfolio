@@ -22,7 +22,6 @@
     "bootstrap": "^5.3.3",
     "lottie-web": "^5.12.2",
     "ng-lottie": "^0.3.2",
-    "ngx-lottie": "^11.0.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
