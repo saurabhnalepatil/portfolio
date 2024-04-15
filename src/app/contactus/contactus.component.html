@@ -21,22 +21,30 @@
                         that
                         align with my skills and interests.</p>
                     <div class="col-sm-12">
-                        <div class="mb-2">
-                            <label for="">Your Name:</label>
-                            <input type="text" class="form-control p-3" placeholder="">
-                        </div>
-                        <div class="mb-2">
-                            <label for="">Your Email: </label>
-                            <input type="email" class="form-control p-3" placeholder="">
-                        </div>
+                        <form #contactForm="ngForm" (ngSubmit)="send()" novalidate>
+                            <div class="mb-2">
+                                <label for="name">Your Name:</label>
+                                <input type="text" class="form-control p-3" placeholder="" id="name" name="name" [(ngModel)]="formData.name"
+                                    required>
+                            </div>
+                            <div class="mb-2">
+                                <label for="email">Your Email: </label>
+                                <input type="email" class="form-control p-3" placeholder="" id="email" name="email"
+                                    [(ngModel)]="formData.email" required>
+                            </div>
+                            <div class="mb-2">
+                                <label for="message">Your Message:</label>
+                                <textarea class="form-control p-3" placeholder="" style="height: 120px;" id="message" name="message"
+                                    [(ngModel)]="formData.message" required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn py-3">SEND MESSAGE <img src="assets/images/icon/message.svg"
+                                        alt=""></button>
+                            </div>
+                        </form>
                     </div>
-                    <div class="mb-2">
-                        <label for="">Your Message:</label>
-                        <textarea type="text" class="form-control p-3" placeholder="" style="height: 120px;"></textarea>
-                    </div>
-                    <div class="text-center">
-                        <button class="btn py-3">SEND MESSAGE <img src="assets/images/icon/message.svg" alt=""></button>
-                    </div>
+
+
                 </div>
             </div>
 
@@ -55,8 +63,10 @@
                         <span>A1 Tower, Pyramid County, Pansare colony,<br> Bhukum, Mulshi 441521</span>
                     </div>
                     <div class="social-icon text-center">
-                        <a href="https://github.com/saurabhnalepatil"> <img src="assets/images/icon/git.svg" alt="" class="img-fluid"></a>
-                        <a href="https://www.linkedin.com/in/saurabh-nale-967472216/"> <img src="assets/images/icon/linkdin.svg" alt="" class="img-fluid"></a>
+                        <a href="https://github.com/saurabhnalepatil"> <img src="assets/images/icon/git.svg" alt=""
+                                class="img-fluid"></a>
+                        <a href="https://www.linkedin.com/in/saurabh-nale-967472216/"> <img
+                                src="assets/images/icon/linkdin.svg" alt="" class="img-fluid"></a>
                         <a href=""> <img src="assets/images/icon/x.svg" alt="" class="img-fluid"></a>
                         <a href=""> <img src="assets/images/icon/wifi.svg" alt="" class="img-fluid"></a>
                         <a href=""> <img src="assets/images/icon/fb.svg" alt="" class="img-fluid"></a>
@@ -92,10 +102,11 @@
                                 <p>STAR</p>
                             </div>
                         </a>
-                        <a href="https://github.com/"><div><img src="assets/images/icon/fark.svg" alt=""
-                                    class="img-fluid">
+                        <a href="https://github.com/">
+                            <div><img src="assets/images/icon/fark.svg" alt="" class="img-fluid">
                                 <p>FARK</p>
-                        </div></a>
+                            </div>
+                        </a>
                     </div>
 
                 </div>

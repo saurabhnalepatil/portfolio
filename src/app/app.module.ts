@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,7 +12,8 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { PracticeComponent } from './practice/practice.component';
 import { MyWorksComponent } from './my-works/my-works.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { MyWorksComponent } from './my-works/my-works.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule, BrowserAnimationsModule, 
+    ToastrModule.forRoot() 
   ],
   providers: [],
   bootstrap: [AppComponent]

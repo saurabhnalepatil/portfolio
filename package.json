@@ -10,7 +10,7 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^16.0.0",
+    "@angular/animations": "^16.2.12",
     "@angular/common": "^16.0.0",
     "@angular/compiler": "^16.0.0",
     "@angular/core": "^16.0.0",
@@ -20,8 +20,10 @@
     "@angular/router": "^16.0.0",
     "@lottiefiles/lottie-player": "^2.0.4",
     "bootstrap": "^5.3.3",
+    "emailjs-com": "^3.2.0",
     "lottie-web": "^5.12.2",
     "ng-lottie": "^0.3.2",
+    "ngx-toastr": "^18.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
