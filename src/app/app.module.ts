@@ -10,6 +10,7 @@ import { EducationsComponent } from './educations/educations.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { PracticeComponent } from './practice/practice.component';
+import { MyWorksComponent } from './my-works/my-works.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { PracticeComponent } from './practice/practice.component';
     EducationsComponent,
     ContactusComponent,
     ProjectsComponent,
-    PracticeComponent
+    PracticeComponent,
+    MyWorksComponent
   ],
   imports: [
     BrowserModule,
