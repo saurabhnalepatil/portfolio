@@ -1,7 +1,7 @@
 # **Developer Portfolio**
 ## Are you struggling to create a professional portfolio website? Look no further! You can use the Developer Portfolio template and create your very own personalized portfolio today! My website is designed to be user-friendly and easily customizable, making it perfect for both developers and freelancers.
 # **Demo 🎥**
-  ![image](https://github.com/saurabhnalepatil/portfolio/assets/95145125/bfb5992d-65af-49f6-92ae-cb6cd9a8f7dc)
+![image](https://github.com/saurabhnalepatil/portfolio/assets/95145125/27eabea3-dfd6-416d-82eb-cbc3890032c9)
 
 # View live preview [here](https://portfolio-tan-beta-56.vercel.app/).
 # **Table of Contents 📜**
@@ -53,7 +53,7 @@ yarn dev
 Open http://localhost:4200 with your browser to see the result.
 
 # **Usage 🕹️**
-Goto emailjs.com and create a new account for the mail sending. In free trial you will get 200 mail per month. After setup emailjs account, Please create a new .env file from .env.example file.
+Go to emailjs.com and create a new account for mail sending. In a free trial, you will get 200 emails per month. After setting up the email JS account, Please create a new .env file from the .env.example file.
 
 Eg:
 ```bash
@@ -72,12 +72,12 @@ export const personalData = {
   email: "saurabhnalepatil.com",
   phone: "+91 9511748787",
   address: "A1 Tower, Pyramid County, Pansare colony, Bhukum, Mulshi 441521",
-  gitHub: "https://github.com/saurabhnalepatil/",
+  github: "https://github.com/saurabhnalepatil/",
   linkedIn: "https://www.linkedin.com/in/saurabh-nale-967472216/",
   resume: "...",
 };
 ```
-devUsername Used for fetching blog from dev.to.
+devUsername Used for fetching blog from dev. to.
 
 # **Packages Used 📦**
 
