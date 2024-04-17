@@ -35,6 +35,7 @@
     border: 1px solid #1d293a;
     margin: 5px;
     overflow: hidden;
+    min-height: min-content;
 }
 
 .card-body {
@@ -53,8 +54,6 @@
 }
 
 .card img:hover {
-    height: calc(100% + 2px);
-    width: calc(100% + 2px);
     transform: scale(1.1);
     transition: height 0.3s, width 0.3s;
 

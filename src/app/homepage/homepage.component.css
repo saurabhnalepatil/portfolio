@@ -304,7 +304,8 @@
 
 @media (min-width: 320px) and (max-width:770.98px) {
     .background-container {
-        background-image: none;
+        top:50%;
+        background-size: 150vw;
     }
 
     .horizontal-nav {
