@@ -33,6 +33,8 @@
 
 .card {
     border: 1px solid #1d293a;
+    margin: 5px;
+    overflow: hidden;
 }
 
 .card-body {
@@ -50,11 +52,12 @@
     }
 }
 
-.card:hover {
-    height: calc(100% + 10px);
-    width: calc(100% + 10px);
-    transform: scaleY(1.05);
-    border: #464c6a;
+.card img:hover {
+    height: calc(100% + 2px);
+    width: calc(100% + 2px);
+    transform: scale(1.1);
+    transition: height 0.3s, width 0.3s;
+
 }
 
 .btn {
@@ -64,15 +67,4 @@
     color: #fff;
     font-weight: 500;
     transition: width 0.3s;
-}
-
-.nav-links{
-    display: block;
-    height: 100vh;
-    width: 70vw;
-    border: 1px solid red;
-    text-decoration: none;
-    color: #fff;
-    transition: width 0.3s;
-    background: #fff;
 }
