@@ -65,3 +65,14 @@
     font-weight: 500;
     transition: width 0.3s;
 }
+
+.nav-links{
+    display: block;
+    height: 100vh;
+    width: 70vw;
+    border: 1px solid red;
+    text-decoration: none;
+    color: #fff;
+    transition: width 0.3s;
+    background: #fff;
+}
