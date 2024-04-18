@@ -1,0 +1,38 @@
+<li class="scroll_card" [style.top.px]="topPosition">
+    <div class="card__content">
+        <div class="card">
+            <div class="gradient">
+                <div class="gradient-bar1"></div>
+                <div class="gradient-bar2"></div>
+                <div class="solid-bar"></div>
+            </div>
+            <div class="custom-border">
+                <div class="circle">
+                    <span *ngFor="let badgeColor of badgeColors" class="badge1 mx-1"
+                        [style.background]="badgeColor"></span>
+                    <div class="title ms-5">
+                        <span>{{ title }}</span>
+                    </div>
+                </div>
+                <div class="hero-card">
+                    <div class="card-body">
+                        <div><span class="keyword">const</span> project = <span class="special-char">{{ '{' }}</span>
+                        </div>
+
+                        <div class="card-content">name:<span class="special-char">'</span><span class="highlight">{{
+                                title }}</span><span class="special-char">',</span></div>
+                        <div class="card-content">tools: <span class="special-char">{{ '[' }}</span><span
+                                *ngFor="let tool of tools; let i = index" class="highlight">{{ (i > 0 ? ', ' : '') + '\'' + tool + '\''
+                                }}</span><span class="special-char">],</span></div>
+                        <div class="card-content">myRole: <span class="boolean">{{ myRole }}</span><span
+                                class="special-char">,</span></div>
+                        <div class="card-content">Description: <span class="description"><span
+                                    class="special-char">'</span>{{ description }}<span
+                                    class="special-char">'</span>,</span></div>
+                        <div><span class="keyword"></span><span class="special-char">{{ '};' }}</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>

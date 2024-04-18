@@ -1,5 +1,5 @@
 <div class="section">
-    <div class="container">
+    <div class="container py-lg-5">
         <div
             style="background-image: radial-gradient(circle, rgba(139,92,246,1) 0%, rgba(13,18,36,1) 100%); height: 2px;">
         </div>
@@ -7,70 +7,15 @@
         <div class="row text-center py-5">
             <div class="col-sm-12">
                 <div class="blur"></div>
-                <span class="pills">My Works</span>
+                <span class="pills">Learning Ventures</span>
                 <div class="line"></div>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <div class="card">
-                    <img src="assets/images/work-1.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <div class="card-title">
-                            <h5>Event Decorators</h5>
-                            <div class="icon">
-                                <i class="fa-solid fa-heart mx-2"></i>22
-                                <i class="fa-solid fa-message mx-2"></i>1
-                            </div>
-                        </div>
-                        <p class="card-text">showcasing his expertise in Event Decoration. Explore a collection of
-                            stunning projects and experiences that demonstrate
-                            creativity and skill.</p>
-                        <div class="text-end">
-                            <a href="https://event-decoration.vercel.app" class="btn" target="_blank">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <div class="card">
-                    <img src="assets/images/work-3.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <div class="card-title">
-                            <h5>Convaint school</h5>
-                            <div class="icon">
-                                <i class="fa-solid fa-heart mx-2"></i>15
-                                <i class="fa-solid fa-message mx-2"></i>2
-                            </div>
-                        </div>
-                        <p class="card-text">showcasing his expertise in Event Decoration. Explore a collection of
-                            stunning projects and experiences that demonstrate
-                            creativity and skill.</p>
-                        <div class="text-end">
-                            <a href="https://event-decoration.vercel.app" class="btn" target="_blank">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <div class="card">
-                    <img src="assets/images/work-4.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <div class="card-title">
-                            <h5>Startup company website</h5>
-                            <div class="icon">
-                                <i class="fa-solid fa-heart mx-2"></i>09
-                                <i class="fa-solid fa-message mx-2"></i>1
-                            </div>
-                        </div>
-                        <p class="card-text">showcasing his expertise in Event Decoration. Explore a collection of
-                            stunning projects and experiences that demonstrate
-                            creativity and skill.</p>
-                        <div class="text-end">
-                            <a href="https://event-decoration.vercel.app" class="btn" target="_blank">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-sm-12 col-md-6 col-lg-4" *ngFor="let card of cardData">
+                <app-vertures-card [imageUrl]="card.imageUrl" [title]="card.title" [likes]="card.likes"
+                    [comments]="card.comments" [description]="card.description" [link]="card.link">
+                </app-vertures-card>
             </div>
         </div>
     </div>

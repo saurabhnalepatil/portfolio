@@ -14,6 +14,8 @@ import { PracticeComponent } from './practice/practice.component';
 import { MyWorksComponent } from './my-works/my-works.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
+import { VerturesCardComponent } from './generic/vertures-card/vertures-card.component';
+import { ProjectCardComponent } from './generic/project-card/project-card.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { ToastrModule } from 'ngx-toastr';
     ContactusComponent,
     ProjectsComponent,
     PracticeComponent,
-    MyWorksComponent
+    MyWorksComponent,
+    VerturesCardComponent,
+    ProjectCardComponent
   ],
   imports: [
     BrowserModule,

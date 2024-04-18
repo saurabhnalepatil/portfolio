@@ -1,0 +1,16 @@
+<div class="card">
+    <img [src]="imageUrl" class="card-img-top" alt="...">
+    <div class="card-body">
+        <div class="card-title">
+            <h5>{{ title }}</h5>
+            <div class="icon">
+                <i class="fa-solid fa-heart mx-2"></i>{{ likes }}
+                <i class="fa-solid fa-message mx-2"></i>{{ comments }}
+            </div>
+        </div>
+        <p class="card-text">{{ description }}</p>
+        <div class="text-end">
+            <a [href]="link" class="btn" target="_blank">Go somewhere</a>
+        </div>
+    </div>
+</div>
