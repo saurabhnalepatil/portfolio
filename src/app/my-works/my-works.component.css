@@ -33,6 +33,9 @@
 
 .card {
     border: 1px solid #1d293a;
+    margin: 5px;
+    overflow: hidden;
+    min-height: min-content;
 }
 
 .card-body {
@@ -40,9 +43,27 @@
     color: #fff;
 }
 
-.card:hover {
-    height: calc(100% + 10px);
-    width: calc(100% + 10px);
-    transform: scaleY(1.05);
-    border: #464c6a;
+.card-title {
+    color: #16f2b3;
+    display: flex;
+    justify-content: space-between;
+
+    i {
+        color: #16f2b3;
+    }
+}
+
+.card img:hover {
+    transform: scale(1.1);
+    transition: height 0.3s, width 0.3s;
+
+}
+
+.btn {
+    background: linear-gradient(31deg, rgba(236, 72, 153, 1) 0%, rgba(117, 0, 251, 1) 97%);
+    border-radius: 30px;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    transition: width 0.3s;
 }
