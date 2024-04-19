@@ -2,7 +2,8 @@
     <div class="nav">
         <div class="container navbar">
             <a class="nav-heading">SAURABH NALE</a>
-            <div class="nav-toggle" (click)="toggleNav()"><i class="fa-solid fa-bars fa-2xl" style="color: #ffffff;"></i></div>
+            <div class="nav-toggle" (click)="toggleNav()"><i class="fa-solid fa-bars fa-2xl"
+                    style="color: #ffffff;"></i></div>
             <ul class="nav-links" [class.open]="isNavOpen">
                 <li class=""><a href="#home" (click)="closeNav()">ABOUT</a></li>
                 <li class=""><a href="#experience" (click)="closeNav()">EXPERIENCE</a></li>
@@ -35,8 +36,10 @@
                             Professional <span style="color: #16f2b3;">Software Developer</span>.
                         </h1>
                         <div class="social-icon py-5">
-                            <a href="https://github.com/saurabhnalepatil" class="mx-2"><img src="assets/images/icon/pink-git.svg" alt=""></a>
-                            <a href="https://www.linkedin.com/in/saurabh-nale-967472216/" class="mx-2"><img src="assets/images/icon/pink-linkdin.svg" alt=""></a>
+                            <a href="https://github.com/saurabhnalepatil" class="mx-2"><img
+                                    src="assets/images/icon/pink-git.svg" alt=""></a>
+                            <a href="https://www.linkedin.com/in/saurabh-nale-967472216/" class="mx-2"><img
+                                    src="assets/images/icon/pink-linkdin.svg" alt=""></a>
                             <a href="" class="mx-2"><img src="assets/images/icon/pink-fb.svg" alt=""></a>
                             <a href="" class="mx-2"><img src="assets/images/icon/pink-x.svg" alt=""></a>
                             <a href="" class="mx-2"> <img src="assets/images/icon/pink-twitter.svg" alt=""></a>
@@ -58,7 +61,7 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-6 order-1 order-lg-2">
-                    <div class="card my-3 mx-2">
+                    <!-- <div class="card my-3 mx-2">
                         <div class="d-flex">
                             <div class="gradient-bar"></div>
                             <div class="gradient-bar"></div>
@@ -116,7 +119,11 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
+                    <!-- some-component.component.html -->
+                    <app-hero-card [coderName]="'Saurabh Nale'"
+                        [skills]="['Angular', 'Python', 'Flask', 'Bootstrap', 'Git/Github', 'SQL', 'Azure', 'Tailwind', 'Azure Function', 'TypeScript']">
+                    </app-hero-card>
                 </div>
             </div>
             <div class="about py-3">
@@ -131,10 +138,13 @@
                     <div class="col-sm-12 col-md-6 fs-5 order-2 order-md-1">
                         <h3 class="py-3 m-0" style="color: #16f2b3;">WHO I AM?</h3>
                         <p> My name is Saurabh Nale. I am a professional and enthusiastic programmer in my daily life. I
-                            am a quick learner with a self-learning attitude. I love to learn and explore new technologies 
-                            and am passionate about problem-solving. I love almost all the stacks of web application 
-                            development and love to make the web more open to the world. My core skill is based on JavaScript and 
-                            I love to do most of the things using JavaScript. I am available for any kind of job opportunity
+                            am a quick learner with a self-learning attitude. I love to learn and explore new
+                            technologies
+                            and am passionate about problem-solving. I love almost all the stacks of web application
+                            development and love to make the web more open to the world. My core skill is based on
+                            JavaScript and
+                            I love to do most of the things using JavaScript. I am available for any kind of job
+                            opportunity
                             that suits my skills and interests.</p>
                     </div>
                     <div class="col-sm-12 col-md-6 text-center order-1 order-md-2">

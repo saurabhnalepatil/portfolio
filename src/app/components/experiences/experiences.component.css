@@ -46,7 +46,7 @@
     z-index: 1;
     margin: 15px 10px;
     cursor: pointer;
-    background-image: url('../../assets/images/blur-23.svg');
+    background-image: url('/src/assets/images/blur-23.svg');
     background-size: cover;
     background-position: bottom;
 }

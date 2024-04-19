@@ -1,0 +1,51 @@
+<!-- generic-card.component.html -->
+<div class="card my-3 mx-2">
+    <div class="d-flex">
+        <div class="gradient-bar"></div>
+        <div class="gradient-bar"></div>
+        <div class="solid-bar"></div>
+    </div>
+    <div class="custom-border">
+        <div class="circle">
+            <span class="badge1 mx-1" style="background: #f87171;"></span>
+            <span class="badge1 mx-1" style="background: #fb923c;"></span>
+            <span class="badge1 mx-1" style="background: #bbf7d0;"></span>
+        </div>
+
+        <div class="hero-card">
+            <div class="card-body">
+                <div><span class="keyword">const</span> coder<span class="keyword"> = </span> <span
+                        class="special-char">{{ '{'}}</span> </div>
+                <div class="card-content">name: <span class="special-char">'</span><span class="highlight">{{ coderName
+                        }}</span><span class="special-char">',</span></div>
+                <div class="card-content">skills:
+                    <span class="special-char">{{ '[' }}</span><span *ngFor="let skill of skills; let i = index"
+                        class="highlight">{{ (i > 0 ?
+                        ', ' : '') + '\'' + skill + '\''
+                        }}</span><span class="special-char">],</span>
+                </div>
+                <div class="card-content">hardWorker: <span class="boolean">true</span><span
+                        class="special-char">,</span></div>
+                <div class="card-content">quickLearner: <span class="boolean">true</span><span
+                        class="special-char">,</span></div>
+                <div class="card-content">problemSolver: <span class="boolean">true</span><span
+                        class="special-char">,</span></div>
+                <div class="card-content"><span style="color: #4ade80;">hireable: </span>
+                    <span class="function">function<span class="special-char">{{'() {'}}</span>
+                    </span>
+                </div>
+                <div class="card-content2"><span class="function">return </span><span
+                        class="special-char">{{'('}}</span></div>
+                <div class="card-content3"><span class="this">this.</span>hardWorker <span class="highlight"> &&</span>
+                </div>
+                <div class="card-content3"><span class="this">this.</span>problemSolver <span
+                        class="highlight">&&</span></div>
+                <div class="card-content3"><span class="this">this.</span>skills.length <span
+                        class="highlight">&gt;=</span> <span class="number"> 5</span></div>
+                <div class="card-content2"><span class="special-char">{{');'}}</span></div>
+                <div class="card-content"><span class="special-char">{{'};'}}</span></div>
+                <div class=""><span class="special-char">{{'};'}}</span></div>
+            </div>
+        </div>
+    </div>
+</div>

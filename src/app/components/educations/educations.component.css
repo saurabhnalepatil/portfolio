@@ -46,7 +46,7 @@
     z-index: 1;
     margin: 15px 10px;
     cursor: pointer;
-    background-image: url('../../assets/images/blur-23.svg');
+    background-image: url('/src/assets/images/blur-23.svg');
     background-size: cover;
     background-position: bottom;
 }
@@ -91,7 +91,7 @@
     left: 0;
     top: 0;
     border-radius: 10px;
-    background-image: url('../../assets/images/blur-23.svg');
+    background-image: url('src/assets/images/blur-23.svg');
     background-size: cover;
     background-position: bottom;
 }
@@ -156,6 +156,4 @@
     }
 }
 
-@media (min-width: 1200px) and (max-width: 1599.98px) {
-    
-}
+@media (min-width: 1200px) and (max-width: 1599.98px) {}
