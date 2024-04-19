@@ -11,7 +11,7 @@ import { EducationsComponent } from './components/educations/educations.componen
 import { ContactusComponent } from './components/contactus/contactus.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { PracticeComponent } from './components/practice/practice.component';
-import { MyWorksComponent } from './components/educations/my-works/my-works.component';
+import { MyWorksComponent } from './components/my-works/my-works.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 import { VerturesCardComponent } from './generic/vertures-card/vertures-card.component';
