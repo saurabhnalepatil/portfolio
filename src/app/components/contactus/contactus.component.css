@@ -68,7 +68,7 @@
 .btn:hover {
     width: 45%;
 
-    img {
+    :is(img) {
         padding-left: 5px;
     }
 }
@@ -117,7 +117,7 @@
     display: grid;
     place-items: center;
 
-    a {
+    :is(a) {
         color: #16f2b3;
         text-decoration: none;
     }
@@ -128,28 +128,28 @@
     align-items: center;
     justify-content: center;
 
-    img {
+    :is(img) {
         height: 20px;
         width: 20px;
         margin-right: 5px;
     }
 
-    div {
+    :is(div) {
         margin-right: 10px;
         display: flex;
         align-items: center;
     }
 
-    p {
+    :is(p) {
         margin: 0px;
     }
 
-    a {
+    :is(a) {
         text-decoration: none;
         color: #d3d8e8;
     }
 
-    p:hover {
+    :is(p):hover {
         color: #16f2b3 !important;
     }
 }
@@ -178,7 +178,7 @@
     .btn:hover {
         width: 65%;
 
-        img {
+        :is(img) {
             padding-left: 5px;
         }
     }

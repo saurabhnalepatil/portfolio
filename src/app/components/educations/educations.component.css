@@ -127,7 +127,7 @@
 .content {
     margin-left: 30px;
 
-    p {
+    :is(p) {
         margin: 5px;
     }
 }

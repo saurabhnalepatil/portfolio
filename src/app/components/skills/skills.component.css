@@ -141,7 +141,7 @@
        height: 115px;
        width: 140px;
 
-       img{
+       :is(img){
         padding: 5px;
        }
    }
