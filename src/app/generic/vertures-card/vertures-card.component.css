@@ -20,10 +20,13 @@
     }
 }
 
+.card:hover {
+    border: 1px solid #464c6a;
+}
+
 .card img:hover {
     transform: scale(1.1);
-    transition: height 0.3s, width 0.3s;
-
+    transition: transform 0.5s ease;
 }
 
 .btn {
@@ -33,4 +36,10 @@
     color: #fff;
     font-weight: 500;
     transition: width 0.3s;
+}
+
+.btn:hover {
+    :is(i) {
+        padding: 0px 5px;
+    }
 }
