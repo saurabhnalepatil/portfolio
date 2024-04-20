@@ -127,3 +127,13 @@
 .this {
     color: #22d3ee;
 }
+
+@media (min-width: 320px) and (max-width:770.98px) {
+    .card-body {
+        padding: 12px;
+    }
+
+    .hero-card {
+        font-size: 12px;
+    }
+}
