@@ -31,10 +31,9 @@
     margin: -25px auto 0;
 }
 
-.experince-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.experince-img iframe {
+    width: 100%;
+    height: 400px;
 }
 
 .card {
