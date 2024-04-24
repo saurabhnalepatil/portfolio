@@ -30,3 +30,14 @@
     filter: blur(6vw);
     margin-top: 10px;
 }
+
+@media (min-width: 320px) and (max-width:767.98px) {
+    .blur {
+        width: 60vw;
+        filter: blur(20vw);
+    }
+
+    .line {
+        width: 80%;
+    }
+}

@@ -29,6 +29,7 @@ export class ContactusComponent {
       });
       console.log('Email sent successfully!', response);
       this.toastr.success('Hello, world!', 'Success');
+      this.formData = { name: '', email: '', contact: '', message: '' }; 
     } catch (error) {
       console.error('Error sending email:', error);
       this.toastr.error('Hello, world!', 'Error');

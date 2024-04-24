@@ -17,7 +17,7 @@ export class MyWorksComponent {
     },
     {
       "imageUrl": "assets/images/school.png",
-      "title": "School",
+      "title": "School Portal",
       "likes": "09",
       "comments": "2",
       "description": "Discover innovative digital learning projects for students of all ages, focusing on engaging experiences.",
@@ -33,7 +33,7 @@ export class MyWorksComponent {
     },
     {
       "imageUrl": "assets/images/user-auth.png",
-      "title": "Auth Dashboard",
+      "title": "User Auth Dashboard",
       "likes": "13",
       "comments": "0",
       "description": "Manage user authentication effortlessly. Handle sign-up, sign-in, and tokens with ease. Centralized security features for seamless user management.",
@@ -46,7 +46,6 @@ export class MyWorksComponent {
       "comments": "5",
       "description": "Built for Techamica, a startup software company. Emphasized simplicity and user-friendliness to reflect their commitment to accessible solutions.",
       "link": "techamica.com"
-    }
-,
+    },
   ];
 }

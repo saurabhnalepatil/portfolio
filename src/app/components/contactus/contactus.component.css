@@ -73,8 +73,15 @@
     }
 }
 
-.details {
-    font-size: 24px;
+.details span{
+    font-size: 22px;
+}
+
+.contact-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
 }
 
 .email,
@@ -89,17 +96,17 @@
     width: 40px;
     background: #8b98a5;
     border-radius: 50%;
-    margin: 20px;
+    margin: 10px;
     padding: 8px;
 }
 
 .details img:hover {
-    height: 45px;
-    width: 45px;
+    height: calc(100% +5px);
+    width: calc(100% +5px);
 }
 
 .social-icon {
-    padding: 50px 0px;
+    padding: 20px 0px;
 }
 
 .social-icon img {
@@ -188,7 +195,14 @@
     }
 
     .details img {
-        margin: 10px;
+        margin: 8px;
+        height: 35px;
+        width: 35px;
+        padding: 8px;
+    }
+
+    .contact-img {
+        height: 40%;
     }
 }
 
