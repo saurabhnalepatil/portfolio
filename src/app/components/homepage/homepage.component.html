@@ -2,8 +2,14 @@
     <div class="nav">
         <div class="container navbar">
             <a class="nav-heading">SAURABH NALE</a>
-            <div class="nav-toggle" (click)="toggleNav()"><i class="fa-solid fa-bars fa-2xl"
-                    style="color: #ffffff;"></i></div>
+            <div *ngIf="!isNavOpen" class="nav-toggle" (click)="toggleNav()">
+                <i class="fa-solid fa-bars fa-2xl" style="color: #ffffff;"></i>
+            </div>
+            <div *ngIf="isNavOpen" class="nav-toggle" (click)="closeNav()">
+                <i class="fa-solid fa-xmark fa-2xl" style="color: #ffffff;"></i>
+            </div>
+
+
             <ul class="nav-links" [class.open]="isNavOpen">
                 <li class=""><a href="#home" (click)="closeNav()">ABOUT</a></li>
                 <li class=""><a href="#experience" (click)="closeNav()">EXPERIENCE</a></li>
