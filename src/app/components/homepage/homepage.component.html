@@ -2,15 +2,9 @@
     <div class="nav">
         <div class="container navbar">
             <a class="nav-heading">SAURABH NALE</a>
-            <div *ngIf="!isNavOpen" class="nav-toggle" (click)="toggleNav()">
-                <i class="fa-solid fa-bars fa-2xl" style="color: #ffffff;"></i>
-            </div>
-            <div *ngIf="isNavOpen" class="nav-toggle" (click)="closeNav()">
-                <i class="fa-solid fa-xmark fa-2xl" style="color: #ffffff;"></i>
-            </div>
-
-
+            <div class="nav-toggle" (click)="toggleNav()"><i class="fa-solid fa-bars fa-2xl" style="color: #ffffff;"></i></div>
             <ul class="nav-links" [class.open]="isNavOpen">
+                <li (click)="closeNav()" class="text-end"><i class="fa-solid fa-xmark fa-2xl" style="color: #ffffff;"></i></li>
                 <li class=""><a href="#home" (click)="closeNav()">ABOUT</a></li>
                 <li class=""><a href="#experience" (click)="closeNav()">EXPERIENCE</a></li>
                 <li class=""><a href="#skills" (click)="closeNav()">SKILLS</a></li>
@@ -18,7 +12,6 @@
                 <li class=""><a href="#project" (click)="closeNav()">PROJECTS</a></li>
                 <li class=""><a href="#contact" (click)="closeNav()">CONTACT US</a></li>
             </ul>
-
             <ul class="horizontal-nav">
                 <li class=""><a href="#home" class="">ABOUT</a></li>
                 <li class=""><a href="#experience" class="">EXPERIENCE</a></li>
