@@ -45,7 +45,7 @@ export class MyWorksComponent {
       "likes": "125",
       "comments": "5",
       "description": "Built for Techamica, a startup software company. Emphasized simplicity and user-friendliness to reflect their commitment to accessible solutions.",
-      "link": "techamica.com"
+      "link": "https://www.techamica.com"
     },
   ];
 }
