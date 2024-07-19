@@ -16,6 +16,14 @@ export class MyWorksComponent {
       "link": "https://event-decoration.vercel.app"
     },
     {
+      "imageUrl": "assets/images/techamica.png",
+      "title": "Software Solutions",
+      "likes": "125",
+      "comments": "5",
+      "description": "Built for Techamica, a startup software company. Emphasized simplicity and user-friendliness to reflect their commitment to accessible solutions.",
+      "link": "https://www.techamica.com"
+    },
+    {
       "imageUrl": "assets/images/school.png",
       "title": "School Portal",
       "likes": "09",
@@ -38,14 +46,6 @@ export class MyWorksComponent {
       "comments": "0",
       "description": "Manage user authentication effortlessly. Handle sign-up, sign-in, and tokens with ease. Centralized security features for seamless user management.",
       "link": "https://auth-dashboard-frontend.vercel.app"
-    },
-    {
-      "imageUrl": "assets/images/techamica.png",
-      "title": "Software Solutions",
-      "likes": "125",
-      "comments": "5",
-      "description": "Built for Techamica, a startup software company. Emphasized simplicity and user-friendliness to reflect their commitment to accessible solutions.",
-      "link": "https://www.techamica.com"
     },
   ];
 }
