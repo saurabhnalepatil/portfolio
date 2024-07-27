@@ -11,6 +11,7 @@ export class VerturesCardComponent {
   @Input() likes: string = '';
   @Input() comments: string = '';
   @Input() description: string = '';
-  @Input() link: string = '';
+  @Input() gitLink: string = '';
+  @Input() browserLink: string = '';
 }
 
