@@ -9,19 +9,19 @@ export class ProjectsComponent {
   projects = [
     {
       topPosition: 0,
-      title: 'AI Powered Financial App',
+      title: 'AI-Based Essay Grading System (2023-2024)',
       badgeColors: ['#f87171', '#fb923c', '#bbf7d0'],
-      tools: ['Express', 'MongoDB', 'OpenAI API', 'AWS SES', 'AWS S3', 'Node Mailer', 'Joi', 'Puppeteer', 'Nginx'],
+      tools: ['Python', 'SQL', 'OpenAI API', 'Azure', 'Azure function', 'SMTP Server', 'Pinecone', 'Threading', 'Postman'],
       myRole: 'Backend Developer',
-      description: 'Me and my team built an AI-powered financial mobile application. I have developed API using Express, Typescript, OpenAI, AWS, and MongoDB. Used OTP via AWS SES, Google, and Facebook for the authentication system. Built AI assistants using OpenAI\'s latest model and trained using our dataset. Voice messages are converted to text using AWS Transcribe. The app fetches data from Google Sheets and generates a PDF term sheet, sent via AWS SES.'
+      description: 'Developed and implemented an AI-Based Essay Grading System leveraging serverless architecture with Azure Functions and SQL Server. This project aimed to address the challenges of manual essay grading, such as subjectivity, inconsistency, and time consumption. My key responsibilities included'
     },
     {
       topPosition: 68,
-      title: 'Travel Agency App',
+      title: 'Assessment Portal Project (2022-2023)',
       badgeColors: ['#f87171', '#fb923c', '#bbf7d0'],
-      tools: ['NextJS', 'Tailwind CSS', 'Google Maps', 'NestJS', 'TypeScript', 'MySQL', 'AWS S3', 'Sun-Editor', 'Gmail Passkey'],
+      tools: ['Angular', '.Net Core', 'SQL', 'Material UI', 'Bootstrap CSS', 'Google Maps', 'TypeScript', 'SMTP Server', 'IIS', 'Gmail Passkey'],
       myRole: 'Full Stack Developer',
-      description: 'I have designed and developed a full-stack web app for 2Expedition, a travel agency in Armenia. I created the UI using NextJS, Typescript, MUI, TailwindCSS, Google Maps, Sun-Editor, and React Slick. The app supports multiple languages and currencies. I developed the API using NestJS, Typescript, MySQL, TypeORM, AWS, and Nodemailer. I deployed the front-end app to AWS Amplify and the back-end app to AWS EC2.'
+      description: 'Worked on an Angular and .NET project, building an assessment portal with various question types (Coding, MCQ, Descriptive, Fill in the Blanks). This project included:'
     },
     {
       topPosition: 136,

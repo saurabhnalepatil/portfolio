@@ -10,7 +10,7 @@ export class HomepageComponent {
   constructor() { }
 
   downloadResume(): void {
-    const resumePath = 'assets/Saurabh_Nale_Resume.pdf';
+    const resumePath = 'assets/SaurabhNaleResume.pdf';
 
     const link = document.createElement('a');
     link.setAttribute('target', '_blank');
