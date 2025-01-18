@@ -17,6 +17,11 @@ import { ToastrModule } from 'ngx-toastr';
 import { VerturesCardComponent } from './generic/vertures-card/vertures-card.component';
 import { ProjectCardComponent } from './generic/project-card/project-card.component';
 import { HeroCardComponent } from './generic/hero-card/hero-card.component';
+import { ChatbotComponent } from './chatbot/chatbot.component';
+import { HttpClientModule } from '@angular/common/http';
+import { AiZydusComponent } from './AI-bots/ai-zydus/ai-zydus.component';
+import { AiRetailbuddyComponent } from './AI-bots/ai-retailbuddy/ai-retailbuddy.component';
+import { AIBotPortfolioComponent } from './AI-bots/ai-bot-portfolio/ai-bot-portfolio.component';
 
 @NgModule({
   declarations: [
@@ -31,13 +36,19 @@ import { HeroCardComponent } from './generic/hero-card/hero-card.component';
     MyWorksComponent,
     VerturesCardComponent,
     ProjectCardComponent,
-    HeroCardComponent
+    HeroCardComponent,
+    ChatbotComponent,
+    AiZydusComponent,
+    AiRetailbuddyComponent,
+    AIBotPortfolioComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule, BrowserAnimationsModule, 
-    ToastrModule.forRoot() 
+    FormsModule, 
+    BrowserAnimationsModule, 
+    ToastrModule.forRoot(), 
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
