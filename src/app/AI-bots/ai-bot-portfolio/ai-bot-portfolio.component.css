@@ -4,6 +4,8 @@
   background-color: #0d1224;
   display: flex;
   align-items: center;
+  overflow-x: none;
+  overflow-y: none;
 }
 .messages {
   flex: 1;

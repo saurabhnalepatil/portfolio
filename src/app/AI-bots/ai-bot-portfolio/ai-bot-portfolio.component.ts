@@ -21,7 +21,7 @@ export class AIBotPortfolioComponent {
   apiUrl: string = 'https://ai-chatbot-5qwd.onrender.com/converse';
   // apiUrl: string = 'http://127.0.0.1:8000/converse';
   isTyping = false;
-  isVoiceEnabled: boolean = false;  
+  isVoiceEnabled: boolean = false;
   isChatOpen: boolean = false;
   isListening: boolean = false;
   recognition: any;
@@ -31,52 +31,52 @@ export class AIBotPortfolioComponent {
     private http: HttpClient,
     private sanitizer: DomSanitizer,
   ) {
-  if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
-  const SpeechRecognition =
-    (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
-  this.recognition = new SpeechRecognition();
-  this.recognition.lang = 'en-US';
-  this.recognition.interimResults = true; 
-  this.recognition.maxAlternatives = 1;
+    if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
+      const SpeechRecognition =
+        (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+      this.recognition = new SpeechRecognition();
+      this.recognition.lang = 'en-US';
+      this.recognition.interimResults = true;
+      this.recognition.maxAlternatives = 1;
 
-  this.recognition.onresult = (event: any) => {
-    let interimTranscript = '';
-    let finalTranscript = '';
+      this.recognition.onresult = (event: any) => {
+        let interimTranscript = '';
+        let finalTranscript = '';
 
-    for (let i = 0; i < event.results.length; i++) {
-      const result = event.results[i];
-      if (result.isFinal) {
-        finalTranscript += result[0].transcript;
-      } else {
-        interimTranscript += result[0].transcript;
-      }
+        for (let i = 0; i < event.results.length; i++) {
+          const result = event.results[i];
+          if (result.isFinal) {
+            finalTranscript += result[0].transcript;
+          } else {
+            interimTranscript += result[0].transcript;
+          }
+        }
+
+        this.userInput = finalTranscript || interimTranscript;
+
+        if (finalTranscript) {
+          this.isListening = false;
+          this.sendMessage();
+        }
+      };
+
+      this.recognition.onerror = (event: any) => {
+        console.error('Speech recognition error:', event.error);
+        this.isListening = false;
+      };
+
+      this.recognition.onend = () => {
+        this.isListening = false;
+        console.log('Voice input ended, mic turned off.');
+      };
+    } 
+    else {
+      console.error('Speech recognition is not supported in this browser.');
     }
-
-    this.userInput = finalTranscript || interimTranscript;
-    
-    if (finalTranscript) {
-      this.isListening = false;
-      this.sendMessage();
-    }
-  };
-
-  this.recognition.onerror = (event: any) => {
-    console.error('Speech recognition error:', event.error);
-    this.isListening = false;
-  };
-
-  this.recognition.onend = () => {
-    this.isListening = false;
-    console.log('Voice input ended, mic turned off.');
-  };
-} else {
-  console.error('Speech recognition is not supported in this browser.');
-}
-
-}
+  }
 
   ngOnInit() {
-    
+    this.sendMessage();
   }
 
   formatResponseToHTML(text: string): SafeHtml {
@@ -109,7 +109,7 @@ export class AIBotPortfolioComponent {
   private createPayload() {
     const user = localStorage.getItem('user');
     return {
-      user_text: this.userInput,
+      user_text: this.userInput ? this.userInput : "Hi",
       user_id: '3',
       company_id: 1
     };
@@ -156,9 +156,9 @@ export class AIBotPortfolioComponent {
         ? lastMessage.text
         : this.sanitizer.sanitize(1, lastMessage.text) || '';
 
-      plainText = plainText.replace(/<[^>]+>/g, ''); 
-      plainText = plainText.replace(/\n/g, ' '); 
-      plainText = plainText.replace(/\s+/g, ' ').trim(); 
+      plainText = plainText.replace(/<[^>]+>/g, '');
+      plainText = plainText.replace(/\n/g, ' ');
+      plainText = plainText.replace(/\s+/g, ' ').trim();
 
       const speech = new SpeechSynthesisUtterance(plainText);
       speech.lang = 'en-US';
@@ -170,32 +170,32 @@ export class AIBotPortfolioComponent {
   toggleVoice(): void {
     this.isVoiceEnabled = !this.isVoiceEnabled;
     if (this.isVoiceEnabled) {
-      this.speakLastMessage(); 
+      this.speakLastMessage();
     } else {
-      speechSynthesis.cancel(); 
+      speechSynthesis.cancel();
     }
   }
 
   toggleVoiceInput(): void {
     if (!this.isListening) {
-      this.startVoiceInput(); 
+      this.startVoiceInput();
     } else {
-      this.stopVoiceInput(); 
+      this.stopVoiceInput();
     }
   }
 
   startVoiceInput(): void {
     if (this.recognition) {
-      this.isListening = true; 
-      this.recognition.start(); 
+      this.isListening = true;
+      this.recognition.start();
     }
   }
 
   stopVoiceInput(): void {
     if (this.recognition) {
-      this.recognition.stop(); 
-      this.isListening = false; 
+      this.recognition.stop();
+      this.isListening = false;
     }
   }
-  
+
 }
