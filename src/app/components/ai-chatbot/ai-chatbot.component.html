@@ -6,9 +6,9 @@
             <button class="close-btn" (click)="modelClose()">&times;</button>
         </div>
         <div class="messages">
-            <span class="bot-description">This AI chatbot showcases my skills and assists with portfolio queries. Please
-                verify
-                critical information for accuracy.</span>
+            <span class="bot-description">Hello! Give me a moment to wake up...</span>
+            <span class="bot-description">This AI chatbot showcases my skills and assists with portfolio queries.</span>
+
             <div *ngFor="let message of messages"
                 [ngClass]="{ 'user-message': message.sender === 'user', 'bot-message': message.sender === 'bot' }">
                 <div class="message-content">

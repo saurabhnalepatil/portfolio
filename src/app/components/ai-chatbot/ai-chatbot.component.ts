@@ -72,7 +72,7 @@ export class AiChatbotComponent {
         this.isListening = false;
         console.log('Voice input ended, mic turned off.');
       };
-    } 
+    }
     else {
       console.error('Speech recognition is not supported in this browser.');
     }
@@ -83,8 +83,24 @@ export class AiChatbotComponent {
 
   ngOnInit() {
     this.sendMessage();
+    setTimeout(() => {
+      const initialPayload = {
+        user_text: 'Hi',
+        user_id: '3',
+        company_id: 1
+      };
+      this.getBotResponse(initialPayload);
+    }, 1000);
+    // setTimeout(() => {
+    //   const initialPayload = {
+    //     user_text: 'Who are you? What purpose you build your Developer? Tell your developer basic info me?',
+    //     user_id: '3',
+    //     company_id: 1
+    //   };
+    //   this.getBotResponse(initialPayload);
+    // }, 2000);  // Simulating a short delay before calling the server
   }
-  modelClose(){
+  modelClose() {
     this.isChatOpen = false;
   }
   formatResponseToHTML(text: string): SafeHtml {
