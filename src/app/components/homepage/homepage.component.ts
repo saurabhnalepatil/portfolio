@@ -1,4 +1,5 @@
 import { Component, HostListener } from '@angular/core';
+import { BotService } from 'src/app/services/bot.service';
 
 @Component({
   selector: 'app-homepage',
@@ -7,11 +8,14 @@ import { Component, HostListener } from '@angular/core';
 })
 export class HomepageComponent {
   isNavOpen: boolean = false;
-  constructor() { }
+  showBotModalButton: boolean = true;
+  isChatOpen = false;
+
+  constructor(private botService: BotService) {
+  }
 
   downloadResume(): void {
-    const resumePath = 'assets/SaurabhNaleResume.pdf';
-
+    const resumePath = 'assets/Saurabh_Fullstack_Resume.pdf';
     const link = document.createElement('a');
     link.setAttribute('target', '_blank');
     link.setAttribute('href', resumePath);
@@ -30,8 +34,13 @@ export class HomepageComponent {
   closeNavOnClickOutside(event: TouchEvent) {
     this.closeNav()
   }
-
+  modelClose() {
+    this.botService.closeBotModule();
+  }
   closeNav() {
     this.isNavOpen = false;
+  }
+  openBot() {
+    this.botService.openBotModule();
   }
 }

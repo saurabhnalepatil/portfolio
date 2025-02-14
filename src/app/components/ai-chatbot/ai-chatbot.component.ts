@@ -1,6 +1,8 @@
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Component, HostListener } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { BotService } from 'src/app/services/bot.service';
+
 interface Message {
   text: string | SafeHtml;
   sender: string;
@@ -9,13 +11,13 @@ interface Message {
 interface BotResponse {
   response: string;
 }
-@Component({
-  selector: 'app-ai-bot-portfolio',
-  templateUrl: './ai-bot-portfolio.component.html',
-  styleUrls: ['./ai-bot-portfolio.component.css']
-})
 
-export class AIBotPortfolioComponent {
+@Component({
+  selector: 'app-ai-chatbot',
+  templateUrl: './ai-chatbot.component.html',
+  styleUrls: ['./ai-chatbot.component.css']
+})
+export class AiChatbotComponent {
   messages: Message[] = [];
   userInput: string = '';
   apiUrl: string = 'https://ai-chatbot-5qwd.onrender.com/converse';
@@ -30,6 +32,7 @@ export class AIBotPortfolioComponent {
   constructor(
     private http: HttpClient,
     private sanitizer: DomSanitizer,
+    private botService: BotService
   ) {
     if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
       const SpeechRecognition =
@@ -73,12 +76,17 @@ export class AIBotPortfolioComponent {
     else {
       console.error('Speech recognition is not supported in this browser.');
     }
+    this.botService.botModalStatus$.subscribe(status => {
+      this.isChatOpen = status;
+    });
   }
 
   ngOnInit() {
     this.sendMessage();
   }
-
+  modelClose(){
+    this.isChatOpen = false;
+  }
   formatResponseToHTML(text: string): SafeHtml {
     const formatted = text
       .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
@@ -199,3 +207,4 @@ export class AIBotPortfolioComponent {
   }
 
 }
+

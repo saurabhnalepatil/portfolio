@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AiZydusComponent } from './ai-zydus.component';
+import { AiChatbotComponent } from './ai-chatbot.component';
 
-describe('AiZydusComponent', () => {
-  let component: AiZydusComponent;
-  let fixture: ComponentFixture<AiZydusComponent>;
+describe('AiChatbotComponent', () => {
+  let component: AiChatbotComponent;
+  let fixture: ComponentFixture<AiChatbotComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [AiZydusComponent]
+      declarations: [AiChatbotComponent]
     });
-    fixture = TestBed.createComponent(AiZydusComponent);
+    fixture = TestBed.createComponent(AiChatbotComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
