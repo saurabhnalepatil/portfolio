@@ -62,11 +62,14 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-6 order-1 order-lg-2">
-                    <app-hero-card [coderName]="'Saurabh Nale'"
-                        [skills]="['Angular', 'Python', 'Flask', '.Net Core', 'SQL', 'No-SQL', 'Azure', 
-                        'Azure Function', 'TypeScript', 'Bootstrap', 'HTML', 'CSS', 'Git/Github', 'Postman', ]">
+                    <app-hero-card [coderName]="'Saurabh Nale'" [skills]="[
+                            'C#', 'TypeScript', 'JavaScript', 'HTML', 'CSS',
+                            '.NET Core', 'Angular', 'Bootstrap', 'ASP.NET MVC',
+                            'MS-SQL', 'PostgreSQL', 'Git', 'Azure DevOps', 'Postman', 'SQL(SSMS)',
+                        ]">
                     </app-hero-card>
                 </div>
+
             </div>
             <div class="about py-3">
                 <div class="row text-center py-2">
@@ -79,15 +82,27 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-6 fs-5 order-2 order-md-1">
                         <h3 class="py-3 m-0" style="color: #16f2b3;">WHO I AM?</h3>
-                        <p> I am an IT professional with 1.8 years of experience in Python development, serverless architecture, and cloud services.
-                        I specialize in developing efficient and scalable applications.
-                        
-                        I developed an AI-Based Essay Grading System using Azure Functions and SQL Server, focusing on optimizing service
-                        components to address manual grading challenges. Additionally, I worked on an Angular and .NET assessment portal,
-                        creating various question types and features like dashboards, data filters, and SMTP-based assessment invitations.
-                        
-                        My experience spans both frontend and backend development, cloud services, and serverless computing, making me
-                        well-equipped for diverse development roles.</p>
+                        <p>
+                            I am a <span class="highlight">Proficient Full-Stack Developer</span> with <span
+                                class="highlight">2 years and 2
+                                months</span> of experience in
+                            <span class="highlight">C#</span>, <span class="highlight">.NET Core</span>, <span
+                                class="highlight">Angular</span>, and <span class="highlight">MS SQL Server</span>.
+                            Skilled in designing <span class="highlight">efficient backend systems</span>, integrating
+                            databases, and
+                            optimizing application performance.
+
+                            Adept at developing <span class="highlight">scalable web applications</span>, building <span
+                                class="highlight">RESTful APIs</span>, and enhancing user experiences
+                            through <span class="highlight">clean, maintainable code</span>. Passionate about solving
+                            complex problems and
+                            collaborating with cross-functional teams
+                            to deliver high-quality software solutions.
+
+                            Seeking an opportunity to leverage my expertise in <span class="highlight">full-stack
+                                development</span> to
+                            build impactful and innovative applications.
+                        </p>
                     </div>
                     <div class="col-sm-12 col-md-6 text-center order-1 order-md-2">
                         <img src="assets/images/hero1.png" alt="" class="img-fluid w-75 py-3">
@@ -95,6 +110,9 @@
                 </div>
             </div>
         </div>
+        <div class="main-content pt-3 w-100" style="overflow: auto; position: relative;"></div>
+        <button class="ai-bot-btn" (click)="openBot()"><img src="assets/images/hero1.png" alt="image"></button>
+        <router-outlet></router-outlet>
     </div>
 </div>
 
@@ -104,5 +122,6 @@
 <div class="" id="education"> <app-educations></app-educations></div>
 <div class="" id="works"><app-my-works></app-my-works></div>
 <div class="" id="contact"><app-contactus></app-contactus> </div>
+<app-ai-chatbot></app-ai-chatbot>
 
-<app-practice></app-practice>
+<!-- <app-practice></app-practice> -->
