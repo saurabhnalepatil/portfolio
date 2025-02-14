@@ -17,26 +17,8 @@ import { VerturesCardComponent } from './generic/vertures-card/vertures-card.com
 import { ProjectCardComponent } from './generic/project-card/project-card.component';
 import { HeroCardComponent } from './generic/hero-card/hero-card.component';
 import { HttpClientModule } from '@angular/common/http';
-import { AiZydusComponent } from './AI-bots/ai-zydus/ai-zydus.component';
-import { AiRetailbuddyComponent } from './AI-bots/ai-retailbuddy/ai-retailbuddy.component';
-import { AIBotPortfolioComponent } from './AI-bots/ai-bot-portfolio/ai-bot-portfolio.component';
-import { SocialLoginModule, SocialAuthServiceConfig, GoogleLoginProvider } from '@abacritt/angularx-social-login';
+import { AiChatbotComponent } from './components/ai-chatbot/ai-chatbot.component';
 
-
-const googleLoginOptions = {
-  provide: 'SocialAuthServiceConfig',
-  useFactory: () => {
-    return {
-      autoLogin: false,
-      providers: [
-        {
-          id: GoogleLoginProvider.PROVIDER_ID,
-          provider: new GoogleLoginProvider('282318528165-gnro0jskj7k2tcg669jqgc8ovgit636d.apps.googleusercontent.com')
-        }
-      ]
-    } as SocialAuthServiceConfig;
-  }
-};
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,9 +32,8 @@ const googleLoginOptions = {
     VerturesCardComponent,
     ProjectCardComponent,
     HeroCardComponent,
-    AiZydusComponent,
-    AiRetailbuddyComponent,
-    AIBotPortfolioComponent,
+    AiChatbotComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -62,7 +43,7 @@ const googleLoginOptions = {
     ToastrModule.forRoot(), 
     HttpClientModule
   ],
-  providers: [googleLoginOptions],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
