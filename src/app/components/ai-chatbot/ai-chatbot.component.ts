@@ -139,38 +139,81 @@ export class AiChatbotComponent {
     };
   }
 
+  // getBotResponse(payload: any): void {
+  //   // const token = localStorage.getItem('Token');
+  //   // if (!token) {
+  //   //   this.messages.push({ text: 'Authorization token is missing.', sender: 'bot' });
+  //   //   console.error('Authorization token is missing.');
+  //   //   return;
+  //   // }
+
+  //   // const headers = new HttpHeaders({
+  //   //   Authorization: `Bearer ${token}`
+  //   // });
+
+  //   this.isTyping = true;
+
+  //   this.http.post<BotResponse>(this.apiUrl, payload).subscribe(
+  //     (response) => {
+  //       this.isTyping = false;
+  //       const sanitizedResponse = this.formatResponseToHTML(response?.response || 'No response available.');
+  //       this.messages.push({ text: sanitizedResponse, sender: 'bot' });
+
+  //       // If voice is enabled, speak the bot's response
+  //       if (this.isVoiceEnabled) {
+  //         this.speakLastMessage();
+  //       }
+  //     },
+  //     (error) => {
+  //       this.isTyping = false;
+  //       this.messages.push({ text: 'Error fetching response from bot.', sender: 'bot' });
+  //       console.error('API Error:', error);
+  //     }
+  //   );
+  // }
+
+
   getBotResponse(payload: any): void {
-    // const token = localStorage.getItem('Token');
-    // if (!token) {
-    //   this.messages.push({ text: 'Authorization token is missing.', sender: 'bot' });
-    //   console.error('Authorization token is missing.');
-    //   return;
-    // }
-
-    // const headers = new HttpHeaders({
-    //   Authorization: `Bearer ${token}`
-    // });
-
     this.isTyping = true;
+
+    const timeout1 = setTimeout(() => {
+      this.messages.push({ text: 'I am thinking... Please wait a moment.', sender: 'bot' });
+    }, 5000);
+
+    const timeout2 = setTimeout(() => {
+      this.messages.push({ text: 'It seems to be taking longer than usual. I am still working on your request.', sender: 'bot' });
+    }, 10000);
+
+    const timeout3 = setTimeout(() => {
+      this.messages.push({ text: 'If you are experiencing delays, you may try rephrasing your question or checking your connection.', sender: 'bot' });
+    }, 15000);
 
     this.http.post<BotResponse>(this.apiUrl, payload).subscribe(
       (response) => {
+        clearTimeout(timeout1);
+        clearTimeout(timeout2);
+        clearTimeout(timeout3);
+
         this.isTyping = false;
         const sanitizedResponse = this.formatResponseToHTML(response?.response || 'No response available.');
         this.messages.push({ text: sanitizedResponse, sender: 'bot' });
 
-        // If voice is enabled, speak the bot's response
         if (this.isVoiceEnabled) {
           this.speakLastMessage();
         }
       },
       (error) => {
+        clearTimeout(timeout1);
+        clearTimeout(timeout2);
+        clearTimeout(timeout3);
+
         this.isTyping = false;
         this.messages.push({ text: 'Error fetching response from bot.', sender: 'bot' });
         console.error('API Error:', error);
       }
     );
   }
+
 
   speakLastMessage(): void {
     debugger
