@@ -177,22 +177,37 @@ export class AiChatbotComponent {
     this.isTyping = true;
 
     const timeout1 = setTimeout(() => {
-      this.messages.push({ text: 'I am thinking... Please wait a moment.', sender: 'bot' });
+      this.messages.push({ text: 'Hey there! Just a moment while I get ready...', sender: 'bot' });
     }, 5000);
 
     const timeout2 = setTimeout(() => {
-      this.messages.push({ text: 'It seems to be taking longer than usual. I am still working on your request.', sender: 'bot' });
+      this.messages.push({ text: 'Almost there! Setting things up for you...', sender: 'bot' });
     }, 10000);
 
     const timeout3 = setTimeout(() => {
-      this.messages.push({ text: 'If you are experiencing delays, you may try rephrasing your question or checking your connection.', sender: 'bot' });
+      this.messages.push({ text: 'Thanks for your patience! Feel free to ask me anything.', sender: 'bot' });
     }, 15000);
+
+    const timeout4 = setTimeout(() => {
+      this.messages.push({ text: 'Still here? I’m working on it, won’t be long now!', sender: 'bot' });
+    }, 20000);
+
+    const timeout5 = setTimeout(() => {
+      this.messages.push({ text: 'You can ask questions like: "What services do you offer?" or "Tell me about Saurabh?"', sender: 'bot' });
+    }, 25000);
+
+    const timeout6 = setTimeout(() => {
+      this.messages.push({ text: 'If you are experiencing delays, you may try rephrasing your question or checking your connection.', sender: 'bot' });
+    }, 30000);
 
     this.http.post<BotResponse>(this.apiUrl, payload).subscribe(
       (response) => {
         clearTimeout(timeout1);
         clearTimeout(timeout2);
         clearTimeout(timeout3);
+        clearTimeout(timeout4);
+        clearTimeout(timeout5);
+        clearTimeout(timeout6);
 
         this.isTyping = false;
         const sanitizedResponse = this.formatResponseToHTML(response?.response || 'No response available.');
@@ -206,6 +221,8 @@ export class AiChatbotComponent {
         clearTimeout(timeout1);
         clearTimeout(timeout2);
         clearTimeout(timeout3);
+        clearTimeout(timeout4);
+        clearTimeout(timeout5);
 
         this.isTyping = false;
         this.messages.push({ text: 'Error fetching response from bot.', sender: 'bot' });
