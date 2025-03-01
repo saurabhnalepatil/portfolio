@@ -178,27 +178,27 @@ export class AiChatbotComponent {
 
     const timeout1 = setTimeout(() => {
       this.messages.push({ text: 'Hey there! Just a moment while I get ready...', sender: 'bot' });
-    }, 5000);
+    }, 7000);
 
     const timeout2 = setTimeout(() => {
       this.messages.push({ text: 'Almost there! Setting things up for you...', sender: 'bot' });
-    }, 10000);
+    }, 14000);
 
     const timeout3 = setTimeout(() => {
       this.messages.push({ text: 'Thanks for your patience! Feel free to ask me anything.', sender: 'bot' });
-    }, 15000);
+    }, 21000);
 
     const timeout4 = setTimeout(() => {
       this.messages.push({ text: 'Still here? I’m working on it, won’t be long now!', sender: 'bot' });
-    }, 20000);
+    }, 28000);
 
     const timeout5 = setTimeout(() => {
       this.messages.push({ text: 'You can ask questions like: "What services do you offer?" or "Tell me about Saurabh?"', sender: 'bot' });
-    }, 25000);
+    }, 35000);
 
     const timeout6 = setTimeout(() => {
       this.messages.push({ text: 'If you are experiencing delays, you may try rephrasing your question or checking your connection.', sender: 'bot' });
-    }, 30000);
+    }, 45000);
 
     this.http.post<BotResponse>(this.apiUrl, payload).subscribe(
       (response) => {
