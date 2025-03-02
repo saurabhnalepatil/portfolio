@@ -197,8 +197,12 @@ export class AiChatbotComponent {
     }, 35000);
 
     const timeout6 = setTimeout(() => {
+      this.messages.push({ text: 'Hey, my backend is deployed on a cold start server, which may take a few moments to wake up.', sender: 'bot' });
+    }, 55000);
+
+    const timeout7 = setTimeout(() => {
       this.messages.push({ text: 'If you are experiencing delays, you may try rephrasing your question or checking your connection.', sender: 'bot' });
-    }, 45000);
+    }, 120000);
 
     this.http.post<BotResponse>(this.apiUrl, payload).subscribe(
       (response) => {
@@ -208,7 +212,8 @@ export class AiChatbotComponent {
         clearTimeout(timeout4);
         clearTimeout(timeout5);
         clearTimeout(timeout6);
-
+        clearTimeout(timeout7);
+        
         this.isTyping = false;
         const sanitizedResponse = this.formatResponseToHTML(response?.response || 'No response available.');
         this.messages.push({ text: sanitizedResponse, sender: 'bot' });
@@ -223,6 +228,8 @@ export class AiChatbotComponent {
         clearTimeout(timeout3);
         clearTimeout(timeout4);
         clearTimeout(timeout5);
+        clearTimeout(timeout6);
+        clearTimeout(timeout7);
 
         this.isTyping = false;
         this.messages.push({ text: 'Error fetching response from bot.', sender: 'bot' });
